@@ -30,7 +30,6 @@
 !assets/registry/**/
 !assets/registry/**/*.json
 
-# Current The Lost Sky Pirate prompt/storyboard files at project root
-!EP*_Seedance*.md
+# Current The Lost Sky Pirate director storyboard and visual reference at project root
 !EP*_导演分镜故事板.md
 !*视觉摄影与场景风格分析.md
