@@ -16,11 +16,14 @@
 !storyboards/*.md
 !prompts/
 !prompts/.gitkeep
-!prompts/v*/
-!prompts/v*/EP*.md
+!prompts/EP*.md
 !segment_mapping/
 !segment_mapping/.gitkeep
 !segment_mapping/EP*.md
+!asset_registry/
+!asset_registry/**/
+!asset_registry/**/.gitkeep
+!asset_registry/**/*.json
 
 # Project skills used by Codex
 !.agents/
@@ -36,12 +39,6 @@
 !scripts/
 !scripts/final/
 !scripts/final/EP*.md
-
-# Text-only asset registries, when this structure is added
-!assets/
-!assets/registry/
-!assets/registry/**/
-!assets/registry/**/*.json
 
 # Legacy visual reference at project root
 !*视觉摄影与场景风格分析.md

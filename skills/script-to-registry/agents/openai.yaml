@@ -1,0 +1,4 @@
+interface:
+  display_name: "Script to Registry"
+  short_description: "Build reusable asset registry JSON from a screenplay"
+  default_prompt: "Read the specified screenplay and create or update its character, prop, and scene registry JSON files."

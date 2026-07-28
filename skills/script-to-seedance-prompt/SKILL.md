@@ -17,14 +17,17 @@ description: >-
      `storyboards/` 中指定的 storyboard，按该工作流提取有效视频信息。
    - **未提供：**先用英语明确告知用户本次没有 storyboard，将只以剧本为信息来源；不要读取 storyboard
      工作流，不要自行补造 storyboard 信息。
-3. 完整读取 [references/segment-mapping-workflow.md](references/segment-mapping-workflow.md)。根据完整剧本
+3. 在切片前运行 [script-to-registry](../script-to-registry/SKILL.md)：只根据完整剧本创建或更新
+   `asset_registry/`，不得读取或使用 storyboard；验证本集所有可复用人物、道具、车辆、机器人、机械和
+   场景都有唯一 JSON。
+   注册表只保存跨场景通用信息，不写本段临时外观状态。
+4. 完整读取 [references/segment-mapping-workflow.md](references/segment-mapping-workflow.md)。根据完整剧本
    和可选 storyboard，先创建或更新 `segment_mapping/EPxx.md`；这一步必须在任何成品 prompt 写作之前完成。
-4. 完整读取 [references/prompt-format.md](references/prompt-format.md)，再生成全部或用户指定的成品 prompt。
+5. 完整读取 [references/prompt-format.md](references/prompt-format.md)，再生成全部或用户指定的成品 prompt。
    写每段时必须同时回到对应的剧本原文和 storyboard 原文（若有）；segment mapping 只决定段号、范围、
    时长和衔接，绝不能代替原始内容。
-5. 成品永远保存在完整集文件 `prompts/v{YYYYMMDD-HHMM}/EPxx.md`，不创建单段文件。用户只要求新增或
-   修改某一段时，在用户指定的完整集文件中更新对应段块；未指定时使用最新版本。其他段块原样保留。若完整集
-   文件尚不存在，先生成完整集文件。
+6. 成品永远保存在完整集工作文件 `prompts/EPxx.md`，不创建单段文件。用户只要求新增或修改某一段时，
+   更新对应段块并原样保留其他段块。若完整集文件尚不存在，先生成完整集文件。
 
 ## Source Authority
 
@@ -32,9 +35,9 @@ description: >-
 - storyboard 只补充实际视频如何呈现，不能改写剧本事实。
 - `segment_mapping/EPxx.md` 只固定片段编号、边界、估计时长和连续性锚点，不是剧情、对白、摄影、灯光或
   声音的内容来源。
-- `assets/registry/` 存在时，它是资产 id 和稳定资产信息的唯一来源。查全 `characters/`、`crowds/`、
-  `scenes/`、`props/` 和 `special_elements/`；没有实际存在的 id 不得引用。注册表不存在时使用
-  `prompt-format.md` 规定的纯文字资产写法，不得发明 id。
+- `asset_registry/` 是资产 id 和跨场景通用信息的唯一来源。只查 `characters/`、`props/` 和
+  `scenes/`；车辆、机器人和其他机械实体属于 `props/`。没有实际存在的 id 不得引用。注册表没有对应条目时，
+  先返回 script-to-registry 补齐可复用资产；只有无需连续性的临时背景对象可以使用纯文字，不得发明 id。
 - `references/prompt-format.md` 决定成品 prompt 的完整结构和写法。
 
 ## Language
