@@ -1,0 +1,36 @@
+# Default: do not sync anything unless it is explicitly allowed below.
+*
+
+# Repository rule file
+!.gitignore
+
+# Project skills used by Codex
+!.agents/
+!.agents/skills/
+!.agents/skills/**
+
+# General prompt notes, when this folder is added
+!notes/
+!notes/**/
+!notes/**/*[Pp]rompt*.md
+
+# Versioned episode storyboards, when this structure is added
+!storyboard/
+!storyboard/v*/
+!storyboard/v*/EP*.md
+
+# Final episode scripts, when this structure is added
+!scripts/
+!scripts/final/
+!scripts/final/EP*.md
+
+# Text-only asset registries, when this structure is added
+!assets/
+!assets/registry/
+!assets/registry/**/
+!assets/registry/**/*.json
+
+# Current The Lost Sky Pirate prompt/storyboard files at project root
+!EP*_Seedance*.md
+!EP*_导演分镜故事板.md
+!*视觉摄影与场景风格分析.md
