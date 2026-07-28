@@ -2,8 +2,16 @@
   "id": "Char-Victor-Grimshaw-50s",
   "type": "character",
   "name": "五十多岁的维克多·格里姆肖",
-  "description": "五十多岁。",
-  "attributes": {},
+  "description": "五十多岁；身高约178厘米；男性低音，粗哑强硬，中性英语口音。",
+  "attributes": {
+    "height": "约178厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "低音",
+      "timbre": "粗哑强硬",
+      "accent": "中性英语口音"
+    }
+  },
   "variants": [
     {
       "id": "Char-Victor-Grimshaw-50s-Base",

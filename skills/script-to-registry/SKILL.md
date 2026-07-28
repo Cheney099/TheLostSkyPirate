@@ -16,19 +16,23 @@ description: >-
 3. Read [references/registry-format.md](references/registry-format.md) completely.
 4. Inventory the complete episode before writing any JSON. Resolve repeated names, aliases, identity-level age or wardrobe
    forms, and recurring objects into stable assets. Create separate character assets for distinct age/life-stage or outfit forms.
-5. Read every existing JSON under `asset_registry/characters/`, `asset_registry/props/`, and `asset_registry/scenes/` before
+5. For every character asset form, infer a stable age/life stage, approximate height, and voice from the complete screenplay
+   using [references/registry-format.md](references/registry-format.md). Do not use storyboard evidence.
+6. Read every existing JSON under `asset_registry/characters/`, `asset_registry/props/`, and `asset_registry/scenes/` before
    creating or updating files.
-6. Create or update one JSON per reusable asset form. Preserve stronger manually authored data and real image metadata.
-7. Validate the complete registry against the screenplay and report created, updated, unchanged, ambiguous, and unresolved assets.
+7. Create or update one JSON per reusable asset form. Preserve stronger manually authored data and real image metadata.
+8. Validate the complete registry against the screenplay and report created, updated, unchanged, ambiguous, and unresolved assets.
 
 ## Authority
 
 - The screenplay determines which assets exist and their narrative identity.
 - Storyboard files are outside this skill's authority and must not supply, alter, or enrich registry information.
 - Registry JSON stores only reusable facts. Temporary damage, dirt, blood, active illumination, attached fire, smoke, weather,
-  debris, and other segment conditions belong in the later prompt asset brief.
+  debris, and other segment conditions belong in the later prompt under that prompt skill's placement rules.
 - Never create a standalone registry asset for a visual condition, emission, material response, or environmental consequence.
-  A permanent body feature belongs to its character's canonical appearance; only its temporary visibility belongs in a segment brief.
+  A permanent body feature belongs to its character's canonical appearance; its temporary visibility belongs in video content.
+- Character age/life stage, height, and voice are required registry facts. Infer them from the screenplay when they are not
+  stated directly; do not leave them empty merely because the screenplay provides only contextual evidence.
 
 ## Output
 

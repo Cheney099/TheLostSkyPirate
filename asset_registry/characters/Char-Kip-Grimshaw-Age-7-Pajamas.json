@@ -2,8 +2,16 @@
   "id": "Char-Kip-Grimshaw-Age-7-Pajamas",
   "type": "character",
   "name": "七岁睡衣造型的基普·格里姆肖",
-  "description": "七岁。",
-  "attributes": {},
+  "description": "七岁；身高约122厘米；男性高音，尖细鼻音，中性英语口音。",
+  "attributes": {
+    "height": "约122厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "高音",
+      "timbre": "尖细鼻音",
+      "accent": "中性英语口音"
+    }
+  },
   "variants": [
     {
       "id": "Char-Kip-Grimshaw-Age-7-Pajamas-Base",

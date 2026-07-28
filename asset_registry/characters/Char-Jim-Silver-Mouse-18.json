@@ -2,8 +2,16 @@
   "id": "Char-Jim-Silver-Mouse-18",
   "type": "character",
   "name": "十八岁的吉姆·西尔弗，绰号“Mouse”",
-  "description": "十八岁。",
-  "attributes": {},
+  "description": "十八岁；身高约175厘米；男性中高音，清亮温和，中性英语口音。",
+  "attributes": {
+    "height": "约175厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "中高音",
+      "timbre": "清亮温和",
+      "accent": "中性英语口音"
+    }
+  },
   "variants": [
     {
       "id": "Char-Jim-Silver-Mouse-18-Base",

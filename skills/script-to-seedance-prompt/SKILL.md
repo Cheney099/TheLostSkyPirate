@@ -19,7 +19,8 @@ description: >-
      工作流，不要自行补造 storyboard 信息。
 3. 在切片前运行 [script-to-registry](../script-to-registry/SKILL.md)：只根据完整剧本创建或更新
    `asset_registry/`，不得读取或使用 storyboard；验证本集所有可复用人物、道具、车辆、机器人、机械和
-   场景都有对应 JSON，且剧本明确区分的人物年龄阶段或服装造型分别使用独立资产 JSON。
+   场景都有对应 JSON，且剧本明确区分的人物年龄阶段或服装造型分别使用独立资产 JSON。每个独立人物资产
+   必须已经根据剧本确定年龄阶段、身高及完整嗓音字段；缺失时不得继续生成 prompt。
    注册表只保存跨场景通用信息，不写本段临时外观状态。
 4. 完整读取 [references/segment-mapping-workflow.md](references/segment-mapping-workflow.md)。根据完整剧本
    和可选 storyboard，先创建或更新 `segment_mapping/EPxx.md`；这一步必须在任何成品 prompt 写作之前完成。

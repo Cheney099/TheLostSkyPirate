@@ -2,8 +2,16 @@
   "id": "Char-Jim-Silver-Age-3",
   "type": "character",
   "name": "三岁的吉姆·西尔弗",
-  "description": "三岁。",
-  "attributes": {},
+  "description": "三岁；身高约96厘米；男性高音，稚嫩清亮，中性英语口音。",
+  "attributes": {
+    "height": "约96厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "高音",
+      "timbre": "稚嫩清亮",
+      "accent": "中性英语口音"
+    }
+  },
   "variants": [
     {
       "id": "Char-Jim-Silver-Age-3-Base",

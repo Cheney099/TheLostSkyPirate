@@ -91,8 +91,8 @@ Every file must contain exactly one base variant. Variant IDs remain stable afte
 
 ## Universal Attributes
 
-Use `attributes` only for facts that should remain consistent whenever the asset appears. Omit unsupported fields instead of
-guessing.
+Use `attributes` only for facts that should remain consistent whenever the asset appears. Character age/life stage, height,
+and voice are required and follow the controlled inference rules below. Omit other unsupported fields instead of guessing.
 
 Character fields may include:
 
@@ -112,6 +112,33 @@ Character fields may include:
 
 For characters, `attributes.voice` and `attributes.height` are the canonical structured values. Character movement or sound
 may remain in `attributes` only when it is a universal identity trait.
+
+## Character Inference
+
+Infer character age/life stage, approximate height, and voice from the complete screenplay alone. Do not read or use a
+storyboard, reference image, generated prompt, segment mapping, or existing visual design as evidence for these fields.
+
+Use evidence in this order:
+
+1. Direct screenplay statements, including stated ages, measurements, casting notes, and voice or delivery descriptions.
+2. Strong screenplay context, including time jumps, family relationships, occupation, physical interactions, relative scale,
+   dialogue register, and speaking style.
+3. A single plausible production interpretation consistent with the character's established life stage and dramatic function.
+
+Requirements:
+
+- Use a specific age when the screenplay supplies one; otherwise use a stable life stage or approximate range.
+- Store height as one approximate metric measurement. Use relative screenplay evidence when available; otherwise choose a
+  plausible value and keep it consistent.
+- Populate `attributes.voice.gender`, `pitch`, `timbre`, and `accent` for every individual character. Infer vocal qualities from
+  dialogue, delivery notes, setting, and characterization without copying dialogue or catchphrases.
+- Do not infer nationality, ethnicity, or a specific regional accent without screenplay support. When no specific accent is
+  supported, use a neutral accent appropriate to the screenplay's dialogue language.
+- Related outfit assets at the same age/life stage must share height and voice unless the screenplay establishes a lasting
+  difference. Different age/life-stage assets may change both.
+- Keep the result internally consistent across the full screenplay. Do not offer multiple alternatives inside JSON.
+- If direct screenplay evidence conflicts irreconcilably, preserve the stronger explicit fact and report the conflict outside
+  the JSON. Do not add confidence, evidence, rationale, or provenance fields.
 
 For props, vehicles, robots, and machines, place all reusable structure, scale, movement, operation, and characteristic sound
 information together in `description`, written as concise natural language. Interpret the asset's general physical function
@@ -193,7 +220,8 @@ Before delivery, verify:
 - Every variant has `id`, `status`, `is_base`, `appearance`, and `image`.
 - JSON parses successfully as UTF-8.
 - Universal voice, movement, operation, sound, scale, and layout facts are retained.
-- Character descriptions contain only age/life stage, voice, and height.
+- Every individual character has a screenplay-derived age/life stage, metric height, and complete four-field voice object.
+- Character descriptions contain exactly the corresponding age/life stage, voice, and height information and nothing else.
 - Prop, vehicle, robot, and machine descriptions contain their complete reusable briefs, with no duplicate `dimensions`,
   `movement`, `operation`, or `sound` fields in `attributes`.
 - Prop descriptions contain no owner, user, target, relationship, location, plot event, or scene-specific purpose.
