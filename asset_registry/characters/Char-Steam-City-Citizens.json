@@ -1,0 +1,16 @@
+{
+  "id": "Char-Steam-City-Citizens",
+  "type": "character",
+  "name": "蒸汽城居民",
+  "description": "年龄范围、嗓音与身高均未在剧本中说明。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Steam-City-Citizens-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "外形与服装多样的都市平民群体。",
+      "image": null
+    }
+  ]
+}

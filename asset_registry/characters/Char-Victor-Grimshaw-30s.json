@@ -1,0 +1,16 @@
+{
+  "id": "Char-Victor-Grimshaw-30s",
+  "type": "character",
+  "name": "三十多岁的维克多·格里姆肖",
+  "description": "三十多岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Victor-Grimshaw-30s-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "三十多岁的肥胖男性。",
+      "image": null
+    }
+  ]
+}

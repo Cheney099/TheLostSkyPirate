@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Black-Warship",
+  "type": "prop",
+  "name": "黑色战舰",
+  "description": "小型高速战舰，船尾下方的机械舱门开启后可投放大型机械单位。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Black-Warship-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "紧凑的黑色战舰，船尾下方设有机械舱门。",
+      "image": null
+    }
+  ]
+}

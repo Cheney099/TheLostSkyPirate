@@ -1,0 +1,16 @@
+{
+  "id": "Char-John-Silver-30s",
+  "type": "character",
+  "name": "三十多岁的乔纳森·西尔弗勋爵",
+  "description": "三十多岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-John-Silver-30s-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "三十多岁，英俊整洁，具有贵族气质。",
+      "image": null
+    }
+  ]
+}

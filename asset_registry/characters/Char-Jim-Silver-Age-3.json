@@ -1,0 +1,16 @@
+{
+  "id": "Char-Jim-Silver-Age-3",
+  "type": "character",
+  "name": "三岁的吉姆·西尔弗",
+  "description": "三岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Jim-Silver-Age-3-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "三岁，金发，大蓝眼睛，胸口有船舵形胎记。",
+      "image": null
+    }
+  ]
+}

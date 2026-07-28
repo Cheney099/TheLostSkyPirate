@@ -1,0 +1,16 @@
+{
+  "id": "Char-Kip-Grimshaw-22",
+  "type": "character",
+  "name": "二十二岁的基普·格里姆肖",
+  "description": "二十二岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Kip-Grimshaw-22-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "二十二岁的男性。",
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "Scene-Steam-City-Alleyway",
+  "type": "scene",
+  "name": "蒸汽城巷道",
+  "description": "蒸汽城内可用于藏身的狭窄巷道。",
+  "attributes": {
+    "layout": "一扇门正对着一堆废弃齿轮与金属废料，废料堆内部空间足以藏住吉姆。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Steam-City-Alleyway-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "蒸汽城内的狭窄巷道，设有一扇门和一堆废弃齿轮与金属废料。",
+      "image": null
+    }
+  ]
+}

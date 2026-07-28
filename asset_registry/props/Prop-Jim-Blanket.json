@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Jim-Blanket",
+  "type": "prop",
+  "name": "吉姆的毯子",
+  "description": "用于包裹并保护幼儿的毯子。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Jim-Blanket-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一条用于包裹吉姆的毯子。",
+      "image": null
+    }
+  ]
+}

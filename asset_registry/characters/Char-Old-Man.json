@@ -1,0 +1,16 @@
+{
+  "id": "Char-Old-Man",
+  "type": "character",
+  "name": "老人",
+  "description": "老年。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Old-Man-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一名老年男性。",
+      "image": null
+    }
+  ]
+}

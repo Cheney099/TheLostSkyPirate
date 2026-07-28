@@ -1,0 +1,16 @@
+{
+  "id": "Char-Jim-Silver-Mouse-18",
+  "type": "character",
+  "name": "十八岁的吉姆·西尔弗，绰号“Mouse”",
+  "description": "十八岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Jim-Silver-Mouse-18-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "十八岁，金发蓝眼，胸口有船舵形胎记，穿衬衫。",
+      "image": null
+    }
+  ]
+}

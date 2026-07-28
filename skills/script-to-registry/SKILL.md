@@ -14,11 +14,11 @@ description: >-
 1. Read the complete user-specified screenplay from the project `scripts/` folder before identifying assets.
 2. Do not read or use storyboard files. The registry must be derived exclusively from the complete screenplay.
 3. Read [references/registry-format.md](references/registry-format.md) completely.
-4. Inventory the complete episode before writing any JSON. Resolve repeated names, aliases, time-separated forms, and recurring
-   objects into stable assets or legitimate reusable variants.
+4. Inventory the complete episode before writing any JSON. Resolve repeated names, aliases, identity-level age or wardrobe
+   forms, and recurring objects into stable assets. Create separate character assets for distinct age/life-stage or outfit forms.
 5. Read every existing JSON under `asset_registry/characters/`, `asset_registry/props/`, and `asset_registry/scenes/` before
    creating or updating files.
-6. Create or update one JSON per reusable asset. Preserve stronger manually authored data and real image metadata.
+6. Create or update one JSON per reusable asset form. Preserve stronger manually authored data and real image metadata.
 7. Validate the complete registry against the screenplay and report created, updated, unchanged, ambiguous, and unresolved assets.
 
 ## Authority

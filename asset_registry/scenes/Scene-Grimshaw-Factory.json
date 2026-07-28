@@ -1,0 +1,19 @@
+{
+  "id": "Scene-Grimshaw-Factory",
+  "type": "scene",
+  "name": "格里姆肖工厂",
+  "description": "老鼠与其他劳工工作的工业工厂。",
+  "attributes": {
+    "layout": "巨型熔炉与大型蒸汽机占据工厂地面，上方设有天窗。",
+    "ambient_sound": "蒸汽喷放与工厂机械运转声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Grimshaw-Factory-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "设有巨型熔炉、大型蒸汽机与高位天窗的工业工厂。",
+      "image": null
+    }
+  ]
+}

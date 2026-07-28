@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Dreadnought",
+  "type": "prop",
+  "name": "无畏机甲",
+  "description": "十五英尺高的自动搜索机甲；以沉重步伐移动并震动地面，搜索时传感器头部往复扫描；集成式光学传感器投射搜索光并识别目标；发出低沉空洞的机械声、沉重脚步声与震地冲击声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Dreadnought-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "十五英尺高，由黄铜装甲板和铁铆钉构成，集成红色光学传感器。",
+      "image": null
+    }
+  ]
+}

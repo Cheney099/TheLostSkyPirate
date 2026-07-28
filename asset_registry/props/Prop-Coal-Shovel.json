@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Coal-Shovel",
+  "type": "prop",
+  "name": "铲煤工具",
+  "description": "用于把煤炭铲入工业设备的工具。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Coal-Shovel-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一把用于工业铲煤的铲具。",
+      "image": null
+    }
+  ]
+}

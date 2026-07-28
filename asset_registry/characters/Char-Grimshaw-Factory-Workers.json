@@ -1,0 +1,18 @@
+{
+  "id": "Char-Grimshaw-Factory-Workers",
+  "type": "character",
+  "name": "格里姆肖工厂工人",
+  "description": "年龄范围、嗓音与身高均未在剧本中说明。",
+  "attributes": {
+    "movement": "工人铲运煤炭、穿行于工业车间并在巨型熔炉旁劳动。"
+  },
+  "variants": [
+    {
+      "id": "Char-Grimshaw-Factory-Workers-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一群工厂劳工。",
+      "image": null
+    }
+  ]
+}

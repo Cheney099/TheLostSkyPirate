@@ -1,0 +1,16 @@
+{
+  "id": "Char-Kip-Grimshaw-Age-7-Pajamas",
+  "type": "character",
+  "name": "七岁睡衣造型的基普·格里姆肖",
+  "description": "七岁。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Char-Kip-Grimshaw-Age-7-Pajamas-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "七岁，穿着扎眼的条纹睡衣。",
+      "image": null
+    }
+  ]
+}

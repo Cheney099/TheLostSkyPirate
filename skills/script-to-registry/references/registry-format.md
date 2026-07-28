@@ -28,9 +28,18 @@ segment belongs in the segment brief and `【视频内容】`.
 ## Deduplication
 
 - Resolve aliases and repeated mentions before creating IDs.
-- Keep one asset when the script clearly refers to the same identity or object.
-- Use variants only for reusable forms that may have separate reference images across multiple segments or episodes, such as a
-  time-separated identity form, a recurring uniform, or a persistent alternate construction.
+- Keep one asset when the script clearly refers to the same identity or object in the same age/life-stage and wardrobe form.
+- Create a separate character asset JSON for each distinct age/life-stage or outfit form established by the screenplay. Give
+  every form its own top-level ID, filename, name, appearance, and base variant; do not place these forms together as variants
+  inside one character record.
+- When age/life-stage and outfit both differ, register only the combinations that actually occur in the screenplay. Do not
+  generate a theoretical set of combinations.
+- Share confirmed universal identity facts, such as voice or movement behavior, across related form records when those facts
+  remain true. Keep form-specific appearance in each form's own base variant.
+- Do not split an asset for a passing accessory, removed outer layer, partial disguise, or other minor presentation change
+  unless the screenplay establishes it as a distinct reusable wardrobe form.
+- Variants may still represent legitimate reusable forms of non-character assets when separate top-level identities are not
+  warranted.
 - Do not create variants for one-scene damage, attached fire, dirt, injuries, active lights, temporary props, or pose changes.
 - When identity is genuinely ambiguous, do not guess. Record the ambiguity in the delivery report and leave the existing files
   unchanged.
@@ -44,8 +53,16 @@ Use one JSON file per asset. The filename must equal the top-level `id` plus `.j
   "id": "Char-Example",
   "type": "character",
   "name": "Example",
-  "description": "Universal identity and narrative function.",
-  "attributes": {},
+  "description": "Adult; low-pitched, rough masculine voice with a regional accent; 175 cm tall.",
+  "attributes": {
+    "height": "175 cm",
+    "voice": {
+      "gender": "masculine",
+      "pitch": "low",
+      "timbre": "rough",
+      "accent": "regional"
+    }
+  },
   "variants": [
     {
       "id": "Char-Example-Base",
@@ -93,16 +110,15 @@ Character fields may include:
 }
 ```
 
-Prop, vehicle, robot, or machine fields may include:
+For characters, `attributes.voice` and `attributes.height` are the canonical structured values. Character movement or sound
+may remain in `attributes` only when it is a universal identity trait.
 
-```json
-{
-  "dimensions": "string",
-  "movement": "string",
-  "operation": "string",
-  "sound": "string"
-}
-```
+For props, vehicles, robots, and machines, place all reusable structure, scale, movement, operation, and characteristic sound
+information together in `description`, written as concise natural language. Interpret the asset's general physical function
+instead of copying its role in the screenplay. Exclude owners, users, targets, relationships, locations, plot events, and the
+reason the asset appears. Keep specific identity in `id` and `name`, and visual design in `appearance`. Do not create or retain
+separate `dimensions`, `movement`, `operation`, or `sound` fields for these assets. Keep the required `attributes` object empty
+unless the established schema already contains unrelated metadata that must be preserved.
 
 Scene fields may include:
 
@@ -115,13 +131,20 @@ Scene fields may include:
 }
 ```
 
-Movement, operation, voice, sound, dimensions, and layout belong here when they are universal. Describe actual mechanics rather
-than broad labels: identify which parts move, their order, pauses, weight transfer, repeated rhythm, or stable operating behavior.
+For universal character movement and scene layout, describe actual behavior or structure rather than broad labels. For props,
+apply the same specificity inside the single natural-language `description`.
 
 ## Appearance And Image
 
-- `description` identifies the asset and its universal function.
-- `variants[].appearance` contains the stable reusable visual form, including age or life-stage information when relevant.
+- A character `description` contains only its age/life stage, voice, and height. Do not put facial features, body shape, hair,
+  clothing, accessories, pose, action, emotion, or temporary condition there. Keep voice and height consistent with the
+  canonical structured values in `attributes`.
+- A prop, vehicle, robot, or machine `description` is a generic reusable brief, naturally combining physical function, stable
+  structure, scale, movement, operation, and characteristic sound without labels or subsections. It must remain valid outside
+  the screenplay scene and must not narrate who owns, uses, deploys, encounters, or is affected by the asset.
+- A scene `description` identifies the location and its universal function.
+- `variants[].appearance` contains the stable reusable visual form. For a character, it describes only the age/life-stage and
+  wardrobe form named by that top-level asset; alternate ages or outfits belong in separate character JSON files.
 - Do not include camera direction, aspect ratio, delivery resolution, temporary condition, current pose, current emotion, or
   current action in `appearance`.
 - Preserve an existing non-null `image` object exactly unless the user explicitly replaces the reference image.
@@ -143,7 +166,15 @@ than broad labels: identify which parts move, their order, pauses, weight transf
 
 - Read the existing record and all variants before editing.
 - Preserve stable IDs, approved appearance text, and image metadata.
+- When an existing character record combines distinct age/life-stage or outfit forms as variants, split those forms into
+  separate top-level assets without inventing unsupported appearance details. Preserve each real image object with the form it
+  depicts, and report any uncertain mapping instead of guessing.
 - Add newly established universal facts without replacing stronger manually authored detail with weaker inference.
+- When updating a prop, vehicle, robot, or machine, merge existing `dimensions`, `movement`, `operation`, and `sound` values
+  into one concise natural-language `description`, remove story-specific context, then remove those duplicate fields from
+  `attributes`.
+- When updating a character, remove visual appearance and narrative-role wording from `description`; preserve those stable
+  visual facts in the appropriate base `appearance`, and preserve voice and height in `attributes`.
 - Never write temporary segment conditions into `description`, `attributes`, or variants.
 - Do not silently resolve a source conflict. Preserve the existing record and report the conflict.
 
@@ -152,6 +183,8 @@ than broad labels: identify which parts move, their order, pauses, weight transf
 Before delivery, verify:
 
 - Every reusable screenplay asset appears exactly once in the appropriate folder.
+- Every screenplay-established character age/life-stage or outfit form has its own record, and no such forms remain grouped as
+  variants of one character record.
 - Every filename equals its top-level ID plus `.json`.
 - IDs are unique across all three folders.
 - Types, prefixes, and folders agree.
@@ -160,4 +193,8 @@ Before delivery, verify:
 - Every variant has `id`, `status`, `is_base`, `appearance`, and `image`.
 - JSON parses successfully as UTF-8.
 - Universal voice, movement, operation, sound, scale, and layout facts are retained.
+- Character descriptions contain only age/life stage, voice, and height.
+- Prop, vehicle, robot, and machine descriptions contain their complete reusable briefs, with no duplicate `dimensions`,
+  `movement`, `operation`, or `sound` fields in `attributes`.
+- Prop descriptions contain no owner, user, target, relationship, location, plot event, or scene-specific purpose.
 - No temporary appearance condition or dependent visual phenomenon has become a registry asset or variant.

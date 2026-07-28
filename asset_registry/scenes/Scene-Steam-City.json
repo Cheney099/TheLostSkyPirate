@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Steam-City",
+  "type": "scene",
+  "name": "蒸汽城",
+  "description": "遍布工厂与空中交通的广阔蒸汽朋克都市。",
+  "attributes": {
+    "layout": "高耸砖砌烟囱与方形金属工厂分布在巨型黄铜齿轮和往复活塞之间，飞艇航线位于城市上空。",
+    "scale": "广阔都市",
+    "ambient_sound": "工业活塞、转动齿轮与蒸汽喷放声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Steam-City-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "广阔的工业都市，由高耸砖砌烟囱、方形金属工厂、巨型黄铜齿轮、往复活塞与空中飞艇航线组成。",
+      "image": null
+    }
+  ]
+}
