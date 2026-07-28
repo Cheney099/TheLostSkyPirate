@@ -6,7 +6,7 @@ mapping 条目写成一条独立 prompt，最后按顺序合进同一个交付�
 
 ## Output
 
-一集 → 一个 `storyboards/v{YYYYMMDD-HHMM}/EPxx.md`：顶部一行 `# EPxx · Title`，其下按顺序排本集全部
+一集 → 一个 `prompts/v{YYYYMMDD-HHMM}/EPxx.md`：顶部一行 `# EPxx · Title`，其下按顺序排本集全部
 成品段（每段一个 `## EPxx-NN` 块）——**只有成品段，不夹带任何切片清单、词数统计、戏核笔记或流程注释**。
 不创建 `EPxx-NN.md` 单段文件。用户只要求新增或修改某段时，在指定的完整集文件中更新对应段块；未指定文件
 时使用最新版本，其他段块原样保留。完整集文件尚不存在时，先生成完整集。

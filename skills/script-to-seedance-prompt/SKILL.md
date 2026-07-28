@@ -22,7 +22,7 @@ description: >-
 4. 完整读取 [references/prompt-format.md](references/prompt-format.md)，再生成全部或用户指定的成品 prompt。
    写每段时必须同时回到对应的剧本原文和 storyboard 原文（若有）；segment mapping 只决定段号、范围、
    时长和衔接，绝不能代替原始内容。
-5. 成品永远保存在完整集文件 `storyboards/v{YYYYMMDD-HHMM}/EPxx.md`，不创建单段文件。用户只要求新增或
+5. 成品永远保存在完整集文件 `prompts/v{YYYYMMDD-HHMM}/EPxx.md`，不创建单段文件。用户只要求新增或
    修改某一段时，在用户指定的完整集文件中更新对应段块；未指定时使用最新版本。其他段块原样保留。若完整集
    文件尚不存在，先生成完整集文件。
 

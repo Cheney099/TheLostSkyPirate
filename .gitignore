@@ -13,6 +13,11 @@
 !scripts/.gitkeep
 !storyboards/
 !storyboards/.gitkeep
+!storyboards/*.md
+!prompts/
+!prompts/.gitkeep
+!prompts/v*/
+!prompts/v*/EP*.md
 !segment_mapping/
 !segment_mapping/.gitkeep
 !segment_mapping/EP*.md
@@ -27,11 +32,6 @@
 !notes/**/
 !notes/**/*[Pp]rompt*.md
 
-# Versioned episode storyboards, when this structure is added
-!storyboards/
-!storyboards/v*/
-!storyboards/v*/EP*.md
-
 # Final episode scripts, when this structure is added
 !scripts/
 !scripts/final/
@@ -43,6 +43,5 @@
 !assets/registry/**/
 !assets/registry/**/*.json
 
-# Current The Lost Sky Pirate director storyboard and visual reference at project root
-!EP*_导演分镜故事板.md
+# Legacy visual reference at project root
 !*视觉摄影与场景风格分析.md
