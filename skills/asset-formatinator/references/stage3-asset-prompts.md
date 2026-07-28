@@ -1,6 +1,6 @@
 # Stage 3 Asset Prompts
 
-Use this file for Stage 3 only. Generate one already-stitched multi-view asset image from the approved Stage 2 image. Run one Image Workbench Nano Banana Pro generation per asset sheet. Do not create separate views or assemble them outside the generated image.
+Use this file for Stage 3 only. Generate one already-stitched multi-view asset image from the approved Stage 2 image. Create one Nano Banana Pro node per asset sheet. Do not create separate views or assemble them outside the image node.
 
 Use the approved Stage 2 image as the first reference. When an approved face reference is supplied for a character, attach it as the second reference.
 

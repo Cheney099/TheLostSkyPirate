@@ -1,0 +1,72 @@
+# Segment Mapping Workflow
+
+segment mapping 是剧本与成品 prompt 之间的独立必经步骤。它固定整集片段的编号、边界、估计时长和连续性
+锚点，但不代替剧本或 storyboard，也不包含成品 prompt。
+
+按 router 指定的顺序，在完整剧本以及可选 storyboard 均已读取后执行。没有 storyboard 时，以完整剧本
+独立完成 mapping。
+
+## Working File
+
+- 项目根目录使用固定文件夹 `segment_mapping/`。
+- 每集只有一个可持续更新的工作文件：`segment_mapping/EPxx.md`。
+- 不为同一集创建时间戳副本、局部 mapping 或单段 mapping。
+- 即使用户只要求一个片段，只要该集 mapping 不存在，也必须先映射完整一集并写入工作文件。
+- mapping 已存在时先完整读取。若剧本或 storyboard 已改变，先更新完整 mapping，再写 prompt；不得在生成
+  单段 prompt 时临时使用另一套边界。
+- 已建立的段号保持稳定。确需改变边界或编号时，更新工作文件并在回复中明确列出受影响的段号。
+
+## File Format
+
+```markdown
+# EPxx Segment Mapping
+
+- Script: scripts/...
+- Storyboard: storyboards/... | none
+- Status: working
+
+## EPxx-01（~Ns）
+
+- 剧本范围：场景标题；从明确的开头事件或对白 cue 到明确的结尾事件或对白 cue
+- Storyboard 范围：Sxx-Syy | none
+- 开始状态：片段第一帧前必须成立的位置、动作和状态
+- 内容范围：本段包含的事件、动作与对白范围的简短索引
+- 结束状态：片段最后一帧已经完成和仍在持续的状态
+- 下一段衔接：下一段必须延续的空间、动作、人物、道具、灯光与声音条件
+```
+
+`内容范围` 只帮助定位原文，不写成视频 prompt，也不试图复制全部细节。最终写作必须重新读取本条对应的
+剧本和 storyboard 原文。
+
+## Build The Full-Episode Map
+
+1. 按剧本顺序列出所有场景、动作块、对白 cue、台词和 `(V.O.)`，再从头到尾划分连续材料。
+2. 每段不得超过 15 秒。对白和旁白以实际词数估时，**约 30 个英文单词等于 15 秒**；动作按离散可见拍点
+   估时，必须给表演、反应、摄影运动和揭示留下可读时间，不能只机械数动作块。
+3. 同一场景内累积内容，在接近 15 秒或自然停点处结束。自然边界提前出现时允许短于 15 秒，不为凑满时长
+   吞入下一事件。
+4. 永不跨越剧本场景或时间边界。优先在完整对白、动作完成、揭示完成、主体或地点改变、硬切和转场处结束。
+5. 除非剧本或 storyboard 本身要求，不额外创建独立建立镜头、人物轮流特写或无对白过场。
+6. `~Ns` 写实际估计值，不凑整。mapping 中的时长和段号必须原样传入最终 prompt 段头。
+
+## Use Storyboard Boundaries
+
+仅在提供 storyboard 时应用：
+
+- 先把 storyboard 的镜头和事件匹配回剧本，不依赖镜号与剧本编号相同。
+- storyboard 的制作段落、sequence、`SEG` 或同类大段只是叙事组织，不直接等于一条 15 秒 prompt。
+- 单个镜号、shot card 或逐镜条目是可组合的剪辑拍点，不默认一镜一条 prompt。
+- 按剧本时长把连续 storyboard 镜头依次组合；storyboard 影响自然边界，但不能增加、删除或重排剧本事件。
+- 优先使用 storyboard 明确的硬切、转场、动作完成、揭示完成、焦点转移和“结束状态”作为 prompt 边界。
+- storyboard 没有明确时长时，不把镜头数平均换算成秒，也不假定每镜等长；若有明确且可信的时长，则与
+  剧本对白和动作所需时间交叉检查。
+- 单个 storyboard 镜头超过 15 秒时，在其内部自然的对白、动作或摄影停点拆分，并在下一条延续同一镜头
+  运动和人物状态。
+
+## Continuity And Selection
+
+- 每条从上一条的结束状态继续；位置、朝向、动作进度、伤势、持物、遮挡、灯光和声音延续不得重置。
+- 完成 mapping 后从头检查到尾，确保所有剧本材料恰好覆盖一次，没有遗漏、重复或重排。
+- 用户可用 segment id、storyboard 镜号或事件描述指定片段。先在 mapping 中定位对应条目，再回到该条目
+  对应的剧本和 storyboard 原文生成 prompt。
+- 生成单段时同时读取前一条和后一条 mapping，以理解入口和出口连续性，但不得把相邻条目的剧情写进本段。

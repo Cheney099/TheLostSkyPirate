@@ -4,6 +4,19 @@
 # Repository rule file
 !.gitignore
 
+# Track empty project structure
+!skills/
+!skills/.gitkeep
+!skills/**/
+!skills/**/*
+!scripts/
+!scripts/.gitkeep
+!storyboards/
+!storyboards/.gitkeep
+!segment_mapping/
+!segment_mapping/.gitkeep
+!segment_mapping/EP*.md
+
 # Project skills used by Codex
 !.agents/
 !.agents/skills/
@@ -15,9 +28,9 @@
 !notes/**/*[Pp]rompt*.md
 
 # Versioned episode storyboards, when this structure is added
-!storyboard/
-!storyboard/v*/
-!storyboard/v*/EP*.md
+!storyboards/
+!storyboards/v*/
+!storyboards/v*/EP*.md
 
 # Final episode scripts, when this structure is added
 !scripts/
