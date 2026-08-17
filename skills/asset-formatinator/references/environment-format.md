@@ -61,7 +61,7 @@ For shot sequences, treat the approved image as the master continuity frame and 
 
 ### Stage 2 Environment Image Edits
 
-Use this branch only after a live-action environment image exists and before an environment sheet is generated. Do not apply it to the MidJourney concept stage or to an approved environment sheet.
+Use this branch only after a live-action environment image exists and before the three Stage 3 environment views are generated. Do not apply it to the MidJourney concept stage or to approved Stage 3 environment views.
 
 Interpret a user's plain-language request to alter the current environment as an image edit; do not depend on fixed trigger words. Read `environment-style-guide.md` and `STORY-REFERENCE.md` when the requested change depends on story continuity. Treat the existing live-action environment as the base-scene reference and preserve its camera, composition, architecture, layout, lighting, palette, scale, and all unaffected elements.
 

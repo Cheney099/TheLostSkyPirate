@@ -21,7 +21,7 @@ Use these forms only when the brief specifies the prologue, present-day story, o
 
 - **Lord John Silver, prologue form, 30s:** handsome, clean-cut royal heir, still possesses both natural limbs, and is badly injured while escaping the destruction of the royal ship.
 - **Captain Long John Silver, present-day form, 45-50:** feared sky-pirate captain with beard, eyepatch, steam-powered prosthetic leg, articulated brass-and-steel arm, and established captain's equipment.
-- **Young Jim Silver, age 3:** blond hair, large blue eyes, small child wrapped in a blanket, with the concealed ship's-wheel birthmark on his chest.
+- **Young Jim Silver, age 3:** blond hair, large blue eyes, small child with the concealed ship's-wheel birthmark on his chest.
 - **Jim Silver / Mouse, present-day form, 18:** blond hair, blue eyes, slim young factory worker, practical work clothing, concealed ship's-wheel birthmark, and emerging blue-energy ability.
 - **Victor Grimshaw, prologue form, 30s:** arrogant, overweight industrial figure who discovers young Jim during the royal attack.
 - **Victor Grimshaw, present-day form, 50s:** ruthless factory owner, materially privileged, controlling, and physically imposing.

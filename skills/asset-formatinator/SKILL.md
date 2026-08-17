@@ -1,6 +1,6 @@
 ---
 name: asset-formatinator
-description: "Create and execute a screenplay- and asset-registry-grounded LibTV Agent image workflow: generate a concept design, wait for approval, create a Nano Banana Pro live-action image, then create a Nano Banana Pro multi-view asset sheet after final approval. Use Seedream for character concepts and MidJourney for environment, prop, and vehicle concepts. Use for characters, crowds, scenes, props, skyships, vehicles, architecture, creatures, and visual effects when project style and story continuity must shape the result."
+description: "Create and execute a screenplay- and asset-registry-grounded LibTV Agent image workflow: generate a concept design, wait for approval, create a Nano Banana Pro live-action image, then create a Nano Banana Pro multi-view asset output after final approval. Use Seedream for character concepts and MidJourney for environment, prop, and vehicle concepts. Use for characters, crowds, scenes, props, skyships, vehicles, architecture, creatures, and visual effects when project style and story continuity must shape the result."
 ---
 
 # Image Prompt Generator
@@ -83,9 +83,11 @@ For an edit to an existing live-action environment, use only the `Stage 2 Enviro
 
 ### Stage 3: Multi-View Asset
 
-Read `references/stage3-asset-prompts.md` and select exactly one template for the approved Stage 2 image. Classify non-character assets by physical scale and spatial role as `Human-Scale Props`, `Large Props`, or `Environments`.
+Read `references/stage3-asset-prompts.md` and select the route for the approved Stage 2 image. Classify non-character assets by physical scale and spatial role as `Human-Scale Props`, `Large Props`, or `Environments`.
 
-Create and run one Nano Banana Pro canvas image node that generates one already-stitched asset sheet. Attach the approved Stage 2 image first. For a face-locked character sheet, attach the approved face reference second. Do not generate separate views or assemble them outside the image node.
+For a character, prop, or special element, create and run one Nano Banana Pro canvas image node that generates one already-stitched asset sheet. Attach the approved Stage 2 image first. For a face-locked character sheet, attach the approved face reference second. Do not generate separate views or assemble them outside the image node.
+
+For an environment, return three complete prompts and create three separate Nano Banana Pro canvas image nodes. Attach the same approved Stage 2 environment image to every node. Each node generates one standalone 16:9 view from the camera position assigned in `stage3-asset-prompts.md`; never combine the views into one image.
 
 Crowds stop after Stage 2. They have no Stage 3 sheet or measurement caption.
 
@@ -122,8 +124,8 @@ The prompt-only exception takes precedence over every output format in this skil
 
 Return only the artifacts required by the active branch:
 
-- **Default generation stage:** grounded design brief, final prompt, created node, generated image, and approval checkpoint
-- **Prompt-only request:** final prompt alone
+- **Default generation stage:** grounded design brief, final prompt or prompts, created node or nodes, generated image or images, and approval checkpoint
+- **Prompt-only request:** final prompt or prompts alone
 - **Revision prompt request:** revision prompt alone
 - **Generated revision:** revision prompt, created node, and generated image
 

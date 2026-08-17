@@ -1,6 +1,6 @@
 # Stage 3 Asset Prompts
 
-Use this file for Stage 3 only. Generate one already-stitched multi-view asset image from the approved Stage 2 image. Create one Nano Banana Pro node per asset sheet. Do not create separate views or assemble them outside the image node.
+Use this file for Stage 3 only. For characters, props, and special elements, generate one already-stitched multi-view asset image and create one Nano Banana Pro node per sheet. For environments, generate three standalone images from three prompts and create one node per prompt. Do not assemble environment views into a grid or sheet.
 
 Use the approved Stage 2 image as the first reference. When an approved face reference is supplied for a character, attach it as the second reference.
 
@@ -8,7 +8,7 @@ In every final prompt, refer to an input only as `the reference image`, `the fir
 
 ## Measurement Resolution
 
-Every single-character sheet must include a height caption. Every prop sheet must include a real-world size caption. Environment sheets carry no measurement caption. Use an explicit measurement from the user or story reference when available. Otherwise infer one specific, plausible metric measurement from the approved design and story context.
+Every single-character sheet must include a height caption. Every prop sheet must include a real-world size caption. Environment images carry no measurement caption. Use an explicit measurement from the user or story reference when available. Otherwise infer one specific, plausible metric measurement from the approved design and story context.
 
 For characters, infer height from stated age, build, role, relative stature, and intended physical read. For prop assets, state the production-useful dimension: length for long objects and vessels, height for upright objects, diameter for circular devices, or width and height for flat objects. Infer the measurement from human use, carrying capacity, internal space, mechanical function, and the approved design's scale.
 
@@ -83,23 +83,26 @@ Based on this reference image, generate a multi-angle sheet of the same special 
 
 ## Environments
 
-Create one 16:9 landscape image laid out as an even 2x2 grid of the same location from four camera positions. Use the approved Stage 2 environment image as the sole reference. This is a location turnaround, not a body or object sheet.
+Use the approved Stage 2 environment image as the sole reference. Return three complete prompts, each creating one standalone 16:9 landscape, 4K image of the same location from a different camera position. Create and run three separate Nano Banana Pro nodes, attaching the same reference image to each node. Do not create a grid, split screen, collage, contact sheet, or multi-panel image.
+
+Keep the location's architecture, layout, scale, materials, dressing, palette, period, ornament, condition, and lighting continuity identical across all three views. Preserve all identity-defining landmarks and established spatial relationships. Reveal only plausible off-frame portions of the same location; do not add, remove, replace, or relocate major structures or defining elements. Adapt camera height and distance to the location and story evidence rather than forcing a ground-level view when an elevated, aerial, or distant view is required.
+
+Write each prompt by replacing `<VIEW_INSTRUCTION>` below with the matching view instruction. Return the three completed prompts in the listed order, without placeholder text.
 
 ```text
-Based on this reference image, generate one 16:9 landscape image laid out as an even 2x2 grid of four panels, two on top and two on the bottom, not a single horizontal strip. Each panel shows the same location from a different camera angle, with identical architecture, materials, dressing, palette, period, ornament, scale, and lighting mood.
-
-Top-left panel: front view of the location.
-Top-right panel: camera turned 90 degrees left from the front-view position, facing the left side of the space.
-Bottom-left panel: camera turned 90 degrees right from the front-view position, facing the right side of the space.
-Bottom-right panel: 180-degree reverse view from the front-view position, facing the opposite direction and showing the unseen back of the space. Invent the unseen half freely while keeping it fully consistent with the established location.
-
-Render every panel as a photorealistic live-action film still in exactly the same photographic style, materials, and lighting as the reference image. Keep all four panels unmistakably the same place seen from four positions. The front panel preserves exact continuity with the reference. The left, right, and reverse panels reveal off-frame space while remaining fully consistent with the established location. Include no characters and no text.
+Based on this reference image, generate one standalone photorealistic live-action cinematic environment still of the same location. Preserve identical architecture, layout, scale, materials, dressing, palette, period, ornament, condition, and lighting continuity. <VIEW_INSTRUCTION> Keep the primary landmark recognizable and preserve the established relationship between all visible structures. Reveal only spatially plausible portions of the same location without introducing, removing, replacing, or relocating identity-defining elements. Match the reference's photographic treatment, material response, atmospheric depth, and lighting mood. 16:9 landscape, 4K. Include no characters, text, labels, borders, panels, or grid.
 ```
 
-### Environment Variant Grid
+Use these view instructions:
 
-Use this branch for a time, condition, or dressing variant of an existing approved four-panel environment sheet. Use the approved base grid as the sole reference.
+1. **Establishing oblique view:** `Move to a new camera position and show a wide three-quarter establishing view that clearly presents the primary landmark, the main usable space, and their depth relationship; do not duplicate the reference composition.`
+2. **Cross-axis view:** `Move laterally to the opposite side of the main viewing axis and look diagonally across the location, keeping the primary landmark visible while revealing the side-to-side arrangement, access, and circulation.`
+3. **Reverse spatial view:** `Relocate beyond or beside the primary focal area and look back through the location from the opposing direction, preserving the primary landmark and established structures while revealing their reverse spatial relationship.`
+
+### Environment View Variants
+
+Use this branch for a time, condition, or dressing variant of an approved three-view environment set. Process each approved view separately. Attach one base view to each node and return three prompts and three standalone images in the same view order.
 
 ```text
-Based on this 2x2 grid of the same location, keep all four camera angles, framing, grid layout, architecture, furniture, materials, and composition exactly the same. Change only the time, lighting, condition, and dressing to: <VARIANT_APPEARANCE>. Apply that state consistently across all four panels. Include no characters and no text.
+Based on this reference image, generate one standalone photorealistic live-action cinematic environment still. Keep its camera position, framing, architecture, layout, furniture, materials, and composition unchanged. Change only the time, lighting, condition, and dressing to: <VARIANT_APPEARANCE>. Apply the specified state consistently throughout the image. 16:9 landscape, 4K. Include no characters, text, labels, borders, panels, or grid.
 ```
