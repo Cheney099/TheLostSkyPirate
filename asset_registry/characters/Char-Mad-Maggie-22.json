@@ -1,0 +1,25 @@
+{
+  "id": "Char-Mad-Maggie-22",
+  "type": "character",
+  "name": "二十二岁的疯玛吉",
+  "description": "二十二岁；身高约168厘米；女性中音，清亮坚韧，中性英语口音。",
+  "attributes": {
+    "height": "约168厘米",
+    "voice": {
+      "gender": "女性",
+      "pitch": "中音",
+      "timbre": "清亮坚韧",
+      "accent": "中性英语口音"
+    },
+    "movement": "动作敏捷强悍，能够持剑近战、攀爬索具并在剧烈摇晃的甲板上保持平衡。"
+  },
+  "variants": [
+    {
+      "id": "Char-Mad-Maggie-22-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "二十二岁，金色长发，外表美丽而极具威慑感，双臂带有纹身；穿红色皮质空盗战斗服、束腰与高筒靴。",
+      "image": null
+    }
+  ]
+}

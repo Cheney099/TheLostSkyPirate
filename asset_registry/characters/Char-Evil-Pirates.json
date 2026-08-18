@@ -1,0 +1,18 @@
+{
+  "id": "Char-Evil-Pirates",
+  "type": "character",
+  "name": "敌对空盗群",
+  "description": "成年群体；嗓音与身高因个体而异。",
+  "attributes": {
+    "movement": "以佩剑集群冲锋，并使用带绳抓钩攀爬船体实施登船攻击。"
+  },
+  "variants": [
+    {
+      "id": "Char-Evil-Pirates-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "由约十二名成年空盗组成的武装群体，面孔多带伤疤，眼神冷酷，穿混杂的空盗服装并携带佩剑。",
+      "image": null
+    }
+  ]
+}

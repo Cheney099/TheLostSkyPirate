@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Steam-City-Docks",
+  "type": "scene",
+  "name": "蒸汽城码头",
+  "description": "蒸汽城内供天空船停靠、装卸和人员登船的繁忙空港。",
+  "attributes": {
+    "layout": "开放码头区分布着登船通道、成堆货物和穿行人群，商船、货运船与大型飞艇停靠或漂浮在上方航道。",
+    "scale": "大型城市空港",
+    "persistent_lighting": "烟霾过滤后的晨间日光",
+    "ambient_sound": "人群、货物搬运、船体索具和空中螺旋桨的混合声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Steam-City-Docks-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "被烟霾晨光笼罩的蒸汽城空港，码头通道与货物堆之间人群密集，上方停泊着商船、货运船和大型飞艇。",
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Storm-Runner-Main-Deck",
+  "type": "scene",
+  "name": "风暴行者号主甲板",
+  "description": "风暴行者号船员作业、战斗和往返各船舱的主要开放甲板。",
+  "attributes": {
+    "layout": "长形木质甲板由船舷与栏杆围合，三根桅杆、索具和帆缆贯穿上方，船艏、船尾、舷侧和船长舱门之间保持连续通行空间。",
+    "scale": "可容纳整支船员与多人近战的大型天空船甲板",
+    "ambient_sound": "高空风声、木板受力、索具拉紧、船帆拍动与船尾螺旋桨声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Main-Deck-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "宽阔木质主甲板，两侧设栏杆与船舷，三桅与密集索具向上延伸，甲板连接船艏、船尾和船长舱门。",
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Ship-Graveyard",
+  "type": "scene",
+  "name": "天空船墓场",
+  "description": "大量废弃天空船在高空漂浮聚集形成的危险残骸区域。",
+  "attributes": {
+    "layout": "数十艘破损船体、撕裂船帆和巨型飞艇残骸分布在不同高度，锈蚀货船与漂浮碎片形成狭窄而曲折的航行通道。",
+    "scale": "覆盖大片空域的多层残骸场",
+    "persistent_lighting": "白昼自然光在密集残骸之间形成不断移动的遮挡与阴影",
+    "ambient_sound": "高空风声、松动金属摩擦声与老旧船体吱嘎声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Ship-Graveyard-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "数十艘处于不同腐朽阶段的天空船残骸漂浮在多层空域中，破船壳、撕裂船帆、巨型飞艇和锈蚀货船共同形成迷宫般的狭窄航路。",
+      "image": null
+    }
+  ]
+}

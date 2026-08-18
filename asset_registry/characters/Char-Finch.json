@@ -1,0 +1,25 @@
+{
+  "id": "Char-Finch",
+  "type": "character",
+  "name": "芬奇",
+  "description": "成年；身高约180厘米；男性中低音，机敏而带有算计感，中性英语口音。",
+  "attributes": {
+    "height": "约180厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "中低音",
+      "timbre": "机敏而带有算计感",
+      "accent": "中性英语口音"
+    },
+    "movement": "能够熟练拉动船帆缆绳并持剑作战，近身行动偏向迅速判断和机会主义。"
+  },
+  "variants": [
+    {
+      "id": "Char-Finch-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "体格结实、面容精悍的成年男性空盗水手，穿无袖深色皮质船员服装，常备佩剑与小刀。",
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Pirate-Sword",
+  "type": "prop",
+  "name": "空盗佩剑",
+  "description": "适合船上近身格斗的单手钢制佩剑，可用于劈砍、突刺、格挡和训练，剑刃碰撞时发出清脆金属撞击声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Pirate-Sword-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "带护手和握柄的单手钢制空盗佩剑，剑刃狭长而坚固。",
+      "image": null
+    }
+  ]
+}

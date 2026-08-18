@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Grimshaw-Factory-Steam-Engine",
+  "type": "prop",
+  "name": "格里姆肖工厂大型蒸汽机",
+  "description": "以煤炭燃烧产生的蒸汽驱动工厂机械的大型固定式引擎，内部活塞、齿轮和压力管路持续运转，并发出沉重机械节拍与蒸汽喷放声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Grimshaw-Factory-Steam-Engine-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "大型固定式工业蒸汽机，由厚重金属机身、巨型活塞、齿轮、管路和投煤区域组成。",
+      "image": null
+    }
+  ]
+}

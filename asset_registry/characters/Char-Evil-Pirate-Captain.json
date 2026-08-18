@@ -1,0 +1,25 @@
+{
+  "id": "Char-Evil-Pirate-Captain",
+  "type": "character",
+  "name": "敌对空盗船长",
+  "description": "中年；身高约183厘米；男性中低音，冷酷强硬，中性英语口音。",
+  "attributes": {
+    "height": "约183厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "中低音",
+      "timbre": "冷酷强硬",
+      "accent": "中性英语口音"
+    },
+    "movement": "以公开威胁和正面冲锋指挥部下发动近身登船战。"
+  },
+  "variants": [
+    {
+      "id": "Char-Evil-Pirate-Captain-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "面容带疤、目光冰冷凶狠的中年男性空盗首领，穿敌对空盗船长服装并携带佩剑。",
+      "image": null
+    }
+  ]
+}

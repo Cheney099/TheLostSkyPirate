@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Ancient-Colossal-Dreadnought",
+  "type": "prop",
+  "name": "古代巨型无畏机甲",
+  "description": "约三十英尺高的古代自动机甲，可用腿部和背部集成火箭升空悬停，以光学传感器扫描目标，并用一条巨臂内置的能量炮进行远程攻击；启动与飞行伴随古老齿轮研磨、火箭轰鸣和低沉机械语音。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Ancient-Colossal-Dreadnought-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "约三十英尺高、接近大型货船尺度，外覆因长期暴露而风化的黄铜装甲，双眼为集成光学传感器，腿部与背部装有火箭推进器，一条巨臂末端集成大型能量炮。",
+      "image": null
+    }
+  ]
+}

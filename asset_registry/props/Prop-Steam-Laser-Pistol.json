@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Steam-Laser-Pistol",
+  "type": "prop",
+  "name": "蒸汽激光手枪",
+  "description": "单手使用的蒸汽科技能量手枪，启动后内部能量机构蓄积并发出细密噼啪声，可射出高能光束。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Steam-Laser-Pistol-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "带有金属枪身、机械接缝和蒸汽科技能量组件的手持式手枪。",
+      "image": null
+    }
+  ]
+}

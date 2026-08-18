@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Storm-Runner-Steering-Controls",
+  "type": "prop",
+  "name": "风暴行者号操舵与导航系统",
+  "description": "用于控制天空船航向的机械操舵系统，由大型船舵轮、木质控制台、杠杆、齿轮和机械罗盘组成；转动船舵并配合控制机构可驱动船体响应，机械罗盘持续提供方位。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Steering-Controls-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一张装有杠杆与齿轮的长木质控制台，嵌有大型机械罗盘，旁边连接一只高于普通成年人的巨型黄铜船舵轮。",
+      "image": null
+    }
+  ]
+}

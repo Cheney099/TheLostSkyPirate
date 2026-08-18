@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Floating-Island-of-Silver",
+  "type": "scene",
+  "name": "银之浮空岛",
+  "description": "悬浮于高空的巨型岛屿。",
+  "attributes": {
+    "layout": "庞大岛体悬浮在高空，整体尺度远超天空船，并可占据大范围天空航路。",
+    "scale": "巨型浮空岛",
+    "persistent_lighting": "高空云层过滤后的自然日光",
+    "ambient_sound": "高空风声与云层流动声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Floating-Island-of-Silver-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "体量极其庞大的岛体悬浮在高空，整体尺度远超普通天空船。",
+      "image": null
+    }
+  ]
+}

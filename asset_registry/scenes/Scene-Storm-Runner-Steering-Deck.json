@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Storm-Runner-Steering-Deck",
+  "type": "scene",
+  "name": "风暴行者号操舵甲板",
+  "description": "风暴行者号驾驶、导航和观察前方航路的开放操舵区域。",
+  "attributes": {
+    "layout": "操舵区围绕大型船舵轮与长木质控制台展开，前方视线直接越过船体指向天空航路，边缘连接甲板栏杆和主甲板通道。",
+    "scale": "可供数名船员共同操控的船上驾驶区域",
+    "ambient_sound": "高空风声、齿轮传动声、船舵转动声和木质船体响应声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Steering-Deck-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "设在天空船开放甲板上的驾驶区域，以大型黄铜船舵轮和木质机械控制台为核心，前方具有无遮挡的航路视野。",
+      "image": null
+    }
+  ]
+}

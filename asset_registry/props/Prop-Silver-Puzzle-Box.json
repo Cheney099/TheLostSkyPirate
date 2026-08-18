@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Silver-Puzzle-Box",
+  "type": "prop",
+  "name": "银色机关盒",
+  "description": "小型机械机关盒，表面齿轮可按特定方式联动解锁，银色外壳与黄铜接缝分离后可投射由线条构成的三维导航地图，运转时发出轻微机械嗡鸣。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Silver-Puzzle-Box-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "小型银色机关盒，表面覆盖细密齿轮、陌生雕纹和船舵形徽记，外壳之间可见黄铜接缝。",
+      "image": null
+    }
+  ]
+}

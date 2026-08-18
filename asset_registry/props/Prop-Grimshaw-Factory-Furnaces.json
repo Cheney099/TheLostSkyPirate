@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Grimshaw-Factory-Furnaces",
+  "type": "prop",
+  "name": "格里姆肖工厂巨型熔炉组",
+  "description": "成组的大型工业熔炉，以持续燃烧的炉膛处理煤炭并为重型工厂设备供热，运转时伴随强烈热流、炉火轰鸣和金属受热声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Grimshaw-Factory-Furnaces-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "占据大面积厂房空间的巨型金属熔炉组，设有高大炉体、开放投煤口和耐热工业结构。",
+      "image": null
+    }
+  ]
+}

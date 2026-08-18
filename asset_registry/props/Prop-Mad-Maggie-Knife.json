@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Mad-Maggie-Knife",
+  "type": "prop",
+  "name": "疯玛吉的腿刀",
+  "description": "便于随身携带和快速拔出的紧凑型刀具，可进行近距离威慑、割断绳索与日常船上切割。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Mad-Maggie-Knife-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "收纳在腿部刀鞘中的紧凑型金属短刀，配有便于单手抓握的刀柄。",
+      "image": null
+    }
+  ]
+}

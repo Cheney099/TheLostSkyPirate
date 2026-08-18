@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Map-Courier-Airship",
+  "type": "prop",
+  "name": "地图信使飞艇",
+  "description": "可供人员与小型货物搭乘的蒸汽飞艇，以船体、桅杆、船帆和蒸汽推进结构飞行。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Map-Courier-Airship-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "木材与金属混合构造的蒸汽飞艇，设有船体、桅杆、船帆和机械推进组件。",
+      "image": null
+    }
+  ]
+}

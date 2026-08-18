@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Boarding-Grappling-Hook",
+  "type": "prop",
+  "name": "登船抓钩",
+  "description": "连接粗绳的重型金属抓钩，可抛射并咬住船舷或栏杆，绳索绷紧后供人员沿船体攀爬登船。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Boarding-Grappling-Hook-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "多爪式重型金属钩头连接粗实长绳，适合固定在木质船舷和栏杆上。",
+      "image": null
+    }
+  ]
+}

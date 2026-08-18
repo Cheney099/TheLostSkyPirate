@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Silver-City-Street",
+  "type": "scene",
+  "name": "银城街道",
+  "description": "银氏家族城市内连接建筑与天空船登乘区域的城市街道。",
+  "attributes": {
+    "layout": "银色街道沿城市建筑延伸，并与可停靠、启动天空船的登乘区域相连。",
+    "scale": "城市街区",
+    "persistent_lighting": "夜间城市照明",
+    "ambient_sound": "城市环境声与远近机械设施运转声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Silver-City-Street-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "夜色中的银色城市街道，沿线建筑与天空船登乘区域共同构成可快速穿行的街区空间。",
+      "image": null
+    }
+  ]
+}

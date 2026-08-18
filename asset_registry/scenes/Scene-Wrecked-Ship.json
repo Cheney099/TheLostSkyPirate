@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Wrecked-Ship",
+  "type": "scene",
+  "name": "漂流沉船残骸",
+  "description": "天空船墓场内一艘可供落脚与藏身的漂流破船。",
+  "attributes": {
+    "layout": "外部残破甲板通向甲板下空间，内部墙面和角落仍可遮挡视线，破碎窗户连通外部残骸空域。",
+    "scale": "中大型废弃天空船",
+    "ambient_sound": "风穿过破窗的啸声、松动木板和金属结构的摩擦声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Wrecked-Ship-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "漂浮在船墓场中的破损天空船，拥有残破甲板、可进入的甲板下舱室、碎裂窗户和狭窄遮蔽角落。",
+      "image": null
+    }
+  ]
+}

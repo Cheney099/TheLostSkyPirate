@@ -1,0 +1,16 @@
+{
+  "id": "Prop-Storm-Runner",
+  "type": "prop",
+  "name": "风暴行者号",
+  "description": "大型载人木质天空船，以船尾下方的黄铜螺旋桨提供推进，并通过三桅帆装、索具和操舵系统调整航向；飞行时伴随螺旋桨旋转、索具拉紧和木质船体受力声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "漂亮的木质天空船，具有三根木桅、木制横桁、舒展的白色船帆，以及安装在船尾下方的黄铜螺旋桨。",
+      "image": null
+    }
+  ]
+}
