@@ -1,0 +1,26 @@
+{
+  "id": "Char-Blacktooth",
+  "type": "character",
+  "name": "黑牙",
+  "description": "成年，约三十五岁；身高约190厘米；男性低音，粗厚凶悍，英式英语口音。",
+  "attributes": {
+    "height": "约190厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "低音",
+      "timbre": "粗厚凶悍",
+      "accent": "英式英语口音"
+    },
+    "movement": "以蛮力处理重型船索，并以力量型剑术进行近身战斗。"
+  },
+  "variants": [
+    {
+      "id": "Char-Blacktooth-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "身材高大魁梧的成年男性水手，穿磨旧的空盗船员服装并佩剑。",
+      "stage1_prompt": "Adult male pirate sailor, about 35 years old and 190 cm tall, with a powerful build, thick neck, broad shoulders, heavy hands, and blunt rugged features. He is completely bald, with a tall bullet-shaped head, heavy brow, small deep-set eyes, and a slight underbite that strengthens his brutish profile. His weathered face bears old scars across one eyebrow, cheek, and nose. A thick, scruffy full beard covers his jaw, with a damaged dark tooth visible beneath it. Stern, guarded expression without cruelty.\n\nHe wears a heavy muted-blue canvas sailor shirt with rolled sleeves, reinforced dark trousers, and braced leather deck boots. A load-bearing deck harness crosses his torso with broad leather straps, brass tension buckles, utility clips, and a padded shoulder yoke. Asymmetrical protection includes one riveted shoulder pad, articulated forearm guards, reinforced gloves, a strapped thigh guard, and one heavy knee pad. Compact brass mechanisms and cable guides support a pressure-assisted strength brace. A utility belt carries shipboard tools, metal hooks, and a heavy cutlass.\n\nFull-body brutish stance on a simplified wooden skyship deck.\n\nComplete flat-color 2D production character concept, six-and-a-half-head proportions, crisp varied-width ink linework, minimal texture, no lighting, shading, gradients, or painterly rendering.",
+      "image": null
+    }
+  ]
+}

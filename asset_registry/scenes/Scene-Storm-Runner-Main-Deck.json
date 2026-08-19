@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Storm-Runner-Main-Deck",
+  "type": "scene",
+  "name": "风暴奔行者号主甲板",
+  "description": "用于航行作业、船员活动与登离飞艇的开放式木质主甲板。",
+  "attributes": {
+    "layout": "长形木质甲板两侧设有栏杆，三根桅杆、索具与船帆贯穿上方空间，甲板连接登船跳板、船长舱入口与较高的操舵区域。",
+    "scale": "大型飞艇主甲板",
+    "ambient_sound": "木板吱嘎声、索具拉紧声、船帆拍动声与船尾螺旋桨声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Main-Deck-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "大型木质飞艇主甲板，两侧有栏杆，上方分布三根桅杆、白色船帆和复杂索具，并设有通往船长舱与操舵区域的通道。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

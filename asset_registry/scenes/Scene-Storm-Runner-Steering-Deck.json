@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Storm-Runner-Steering-Deck",
+  "type": "scene",
+  "name": "风暴奔行者号操舵甲板",
+  "description": "用于控制飞艇航向并观察前方空域的开放式操舵区域。",
+  "attributes": {
+    "layout": "巨大的黄铜轮式船舵位于长形木制控制台旁，控制台嵌有拉杆、外露齿轮与大型机械罗盘，外围栏杆朝向前方空域。",
+    "scale": "中型开放甲板",
+    "ambient_sound": "船舵传动声、控制台齿轮声、木结构吱嘎声与高空风声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Steering-Deck-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "开放式木质操舵甲板，设有巨大黄铜轮式船舵、带拉杆和齿轮的长形木制控制台、大型机械罗盘与外围栏杆。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

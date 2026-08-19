@@ -12,6 +12,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "蒸汽城内的狭窄巷道，设有一扇门和一堆废弃齿轮与金属废料。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

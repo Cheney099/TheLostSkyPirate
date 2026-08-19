@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Silver-City-Street",
+  "type": "scene",
+  "name": "白银城街道",
+  "description": "白银城内连接城市建筑与飞艇起降位置的城市街道。",
+  "attributes": {
+    "layout": "银色调街面沿城市建筑之间延伸，并连接可停靠小型飞艇的开放区域。",
+    "scale": "城市街区"
+  },
+  "variants": [
+    {
+      "id": "Scene-Silver-City-Street-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "白银城内的银色调城市街道，周围分布城市建筑，并留有飞艇停靠与起飞空间。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

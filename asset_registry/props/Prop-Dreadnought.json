@@ -10,6 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "十五英尺高，由黄铜装甲板和铁铆钉构成，集成红色光学传感器。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

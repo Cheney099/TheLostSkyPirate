@@ -20,7 +20,7 @@ description: >-
    using [references/registry-format.md](references/registry-format.md). Do not use storyboard evidence.
 6. Read every existing JSON under `asset_registry/characters/`, `asset_registry/props/`, and `asset_registry/scenes/` before
    creating or updating files.
-7. Create or update one JSON per reusable asset form. Preserve stronger manually authored data and real image metadata.
+7. Create or update one JSON per reusable asset form. Preserve stronger manually authored data, real image metadata, and any non-null variant `stage1_prompt` written by an image-prompt workflow.
 8. Validate the complete registry against the screenplay and report created, updated, unchanged, ambiguous, and unresolved assets.
 
 ## Authority

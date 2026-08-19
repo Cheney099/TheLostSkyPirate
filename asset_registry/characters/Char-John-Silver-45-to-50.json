@@ -1,0 +1,26 @@
+{
+  "id": "Char-John-Silver-45-to-50",
+  "type": "character",
+  "name": "四十五至五十岁的长约翰·西尔弗船长",
+  "description": "四十五至五十岁；身高约183厘米；男性低音，粗粝洪亮，英式英语口音。",
+  "attributes": {
+    "height": "约183厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "低音",
+      "timbre": "粗粝洪亮",
+      "accent": "英式英语口音"
+    },
+    "movement": "以蒸汽动力机械腿稳健行走；机械臂可在金属爪、长剑、抓钩与火箭推进器形态之间转换。"
+  },
+  "variants": [
+    {
+      "id": "Char-John-Silver-45-to-50-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "四十五至五十岁，面容因岁月与战斗而粗犷，一只眼戴眼罩，留浓密胡须，身体带有疤痕，穿磨旧的海盗服装；一条腿是带活塞与齿轮的蒸汽动力机械义肢，一条手臂由黄铜与钢铁锻成，末端为可变形的重型机械爪。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

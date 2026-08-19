@@ -1,0 +1,26 @@
+{
+  "id": "Char-Finch",
+  "type": "character",
+  "name": "芬奇",
+  "description": "成年，约三十五岁；身高约180厘米；男性中音，轻滑狡黠，英式英语口音。",
+  "attributes": {
+    "height": "约180厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "中音",
+      "timbre": "轻滑狡黠",
+      "accent": "英式英语口音"
+    },
+    "movement": "动作机敏，熟练操控船索，并以灵活的刀剑技巧进行近身战斗。"
+  },
+  "variants": [
+    {
+      "id": "Char-Finch-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "体格壮实的成年男性水手，穿磨旧的空盗船员服装并携带刀剑。",
+      "stage1_prompt": "Adult male sky-pirate sailor, about 35 years old and 180 cm tall, scrawny and wiry, with narrow shoulders, long limbs, bony hands, a sharp nose, hollow cheeks, restless eyes, and a sly appraising half-smile. Uneven black mullet with short hacked sides and a long feathered nape.\n\nHe wears a cream collarless sailor shirt beneath a fitted striped waistcoat, a cropped burgundy deck jacket with contrasting lining, a narrow scarf, crossed leather braces, and a patched sash. Slim dark-green trousers, mismatched buttoned gaiters, and narrow reinforced deck boots. Layered construction remains agile rather than bulky. A brass-and-steel knife-deployment bracer wraps one forearm, with visible hinges, spring housing, and locking lever. A compact geared belt reel, articulated shoulder brace, varied buckles, small tool pouches, concealed knife sheaths, and a short cutlass complete the outfit.\n\nFull-body, slightly hunched sideways stance with one hand hovering near a concealed blade. Simplified wooden skyship deck with masts and brass fittings, subordinate to the character.\n\nComplete flat-color 2D production character concept, six-and-a-half-head proportions, crisp varied-width ink linework, opaque flat colors, clear graphic shapes, minimal texture, no lighting, shading, gradients, or painterly rendering.",
+      "image": null
+    }
+  ]
+}

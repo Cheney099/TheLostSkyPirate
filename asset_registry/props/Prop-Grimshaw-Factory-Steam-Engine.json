@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Grimshaw-Factory-Steam-Engine",
+  "type": "prop",
+  "name": "格里姆肖工厂大型蒸汽机",
+  "description": "以煤炭持续供热的大型工业蒸汽机，通过熔炉、锅炉、活塞与齿轮机构输出机械动力，运行时发出炉火轰鸣、蒸汽喷放、活塞往复与齿轮转动声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Grimshaw-Factory-Steam-Engine-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "体量巨大的工业蒸汽机，由投煤口、熔炉与锅炉主体、粗大管道、往复活塞和外露齿轮组成。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

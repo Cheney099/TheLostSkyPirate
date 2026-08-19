@@ -1,0 +1,19 @@
+{
+  "id": "Char-Evil-Pirates",
+  "type": "character",
+  "name": "袭击者空盗团",
+  "description": "成年男性群体；嗓音与身高因个体而异。",
+  "attributes": {
+    "movement": "使用抓钩与绳索登船，并以刀剑展开近身围攻。"
+  },
+  "variants": [
+    {
+      "id": "Char-Evil-Pirates-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "约十二名成年男性空盗，面部带有疤痕，目光冷酷，穿各异的磨旧空盗服装并佩剑。",
+      "stage1_prompt": "Eight hostile adult sky pirates form a varied boarding crew with scarred faces, cold watchful eyes, and six-to-six-and-a-half-head proportions. Distinct silhouettes include a massive armored breacher, tall lean climber, short compact mechanic, older broad swordsman, wiry line-handler, barrel-chested deck fighter, lanky lookout, and thickset grapnel operator.\n\nTheir vintage silhouettes combine cropped Victorian naval jackets, fitted frock coats, waistcoats, sailor shirts, breeches, gaiters, and heavy deck boots. Red dominates the clothing through crimson coats, brick-red shirts, patterned waistcoats, sashes, scarves, and coat linings. Blackened-iron breastplates, asymmetrical pauldrons, gorgets, vambraces, knee cops, and braced boots unify the crew. Brown leather straps and brass or copper fittings secure the armor. Sparse accents appear only as one muted teal scarf, one ochre sash, and two cream shirts.\n\nFunctional equipment includes sheathed cutlasses, lowered boarding swords, cable drums, hand-cranked grapnel launchers, ratchet elbow braces, pressure hoses, and compact winch harnesses. No futuristic technology. They stand beside dock cargo, calmly checking blades and boarding mechanisms.\n\nComplete flat-color 2D production crowd concept, 16:9 landscape, every full body visible, simplified dockside background, crisp varied-width ink linework, opaque flat colors, minimal texture, no lighting, shading, gradients, or painterly rendering.",
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Boarding-Grappling-Hook",
+  "type": "prop",
+  "name": "登船抓钩",
+  "description": "连接粗绳的重型登船抓钩，可投掷或发射至船体边缘，使金属钩爪咬住栏杆或结构并由绷紧的绳索提供稳定攀爬支点；命中时发出金属撞击声，承受拉力时伴随绳索绷紧与摩擦声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Boarding-Grappling-Hook-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "重型金属多爪抓钩，中央连接环系着粗绳，向外弯曲的尖锐钩爪可牢固咬住栏杆或船体边缘。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

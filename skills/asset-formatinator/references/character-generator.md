@@ -3,7 +3,7 @@
 ## Stage Routing
 
 - **Stage 1, Seedream:** Use `Style Guidance` and `Seedream Concept Direction` only.
-- **Stage 2, Nano Banana Pro:** Use the approved Stage 1 image as the primary design reference and apply `Nano Banana Pro Photo Format` only.
+- **Stage 2, Nano Banana Pro:** Read the matching variant's `stage1_prompt` as the complete textual source for Stage 1 design decisions and apply `Nano Banana Pro Photo Format` only. The final prompt tells the image model to use the attached Stage 1 image, which the user supplies externally. Do not inspect, verify, or request that image.
 
 ## Style Guidance
 
@@ -15,7 +15,7 @@ Read `general-aesthetics.md` before writing. That project guide establishes the 
 
 Resolve the character in this order:
 
-1. Apply explicit user intent and approved image continuity. Normalize conflicting design terms to the closest project-appropriate equivalent.
+1. Apply explicit user intent and approved logged design continuity. Normalize conflicting design terms to the closest project-appropriate equivalent.
 2. Determine apparent age, role, occupation, class, rank, current circumstance, and required story state.
 3. Select identity traits independently: ethnicity, body shape, natural hair color, hair texture, hairstyle, and headwear.
 4. Select the applicable faction clothing branch and one coherent silhouette.
@@ -81,7 +81,7 @@ Use declarative present-tense descriptions of the completed visible result. Keep
 
 ### Continuity and Variants
 
-For a named established character, use `STORY-REFERENCE.md` to preserve identity, role, permanent features, established clothing, and story-state continuity.
+For a named established character, use `scripts/STORY-REFERENCE.md` to preserve identity, role, permanent features, established clothing, and story-state continuity.
 
 For a variant of an approved base design, preserve the base face, build, hair, silhouette, palette, materials, and unchanged garments. Describe the visible delta: new look state, disguise, damage, transformation, uniform, or combat condition.
 
@@ -105,7 +105,7 @@ Use stylized production-concept proportions: approximately six to six-and-a-half
 
 ## Nano Banana Pro Photo Format
 
-Use this section for Stage 2 only. It controls the final photograph's presentation and contains no character-design direction.
+Use this section for Stage 2 only. It applies the final photographic presentation to the stable character or crowd design recorded in the matching registry variant's `stage1_prompt`.
 
 ### Required Presentation
 
@@ -129,9 +129,11 @@ Use no rim light, backlight, edge light, spotlight, flood fill, harsh beauty key
 
 ### Nano Banana Pro Prompt Construction
 
-Write one concise prompt from the required presentation, lighting, and finish constraints above. Use the approved Stage 1 image as the primary source for the character's design. Add the explicit apparent age and one concise facial description from the brief or `STORY-REFERENCE.md` so the live-action face remains age-accurate. When neither source describes the face, infer one short facial profile with age-congruent facial maturity, structure, and complexion. Allow explicit user-requested presentation changes, such as aspect ratio, framing, pose, or resolution. Do not add other character, costume, prop, material, palette, story, or style descriptions. Do not enumerate identity, clothing, colors, accessories, or other features to preserve; the attached image carries them without written restatement.
+Require a non-null `stage1_prompt` in the matching character variant. Extract its stable visible design decisions, including body design, hair, facial identity, clothing, accessories, prosthetics, and other distinguishing construction or appearance features. Discard its illustration style, rendering method, background, pose, camera, framing, aspect ratio, and other Stage 1 presentation instructions.
 
-In the final prompt, refer to the visual source only as `the attached image` or `the reference image`. Do not call it approved, a concept, a design reference, or a Stage 1 image.
+Write one concise prompt that states the extracted stable design facts and applies the required presentation, lighting, and finish constraints above. Add the explicit apparent age and one concise facial description from the brief or `scripts/STORY-REFERENCE.md` when needed for age-accurate live-action facial structure. When neither source describes the face, infer one short facial profile with age-congruent maturity, structure, and complexion. Allow explicit user-requested Stage 2 presentation changes such as aspect ratio, framing, pose, or resolution. Do not add story summary or unrelated design detail.
+
+Write the extracted design facts into the final prompt directly and tell the image model to use the attached image as the visual reference for the same character. Refer to it only as `the attached image` or `the reference image`; do not call it approved, a concept, or a Stage 1 image. Do not claim to have inspected it, and do not mention the prior prompt or workflow stage.
 
 ### Crowd Stage 2 Format
 
@@ -139,4 +141,4 @@ Use this branch for a crowd only. Apply the same dark interior, black wall and f
 
 Replace the single-character framing and 9:16 vertical composition with one 16:9 landscape image containing the complete crowd. Keep roughly six to ten distinct figures visible and readable. Their shared low-intensity activity may remain, but avoid cropping the group into a single-person portrait.
 
-Write one concise prompt from the crowd presentation, lighting, and finish constraints above. Use the approved Stage 1 image as the sole source for every crowd member's design. Allow explicit user-requested presentation changes, but do not add new character-design or environment descriptions. In the final prompt, refer to the visual source only as `the attached image` or `the reference image`.
+Require a non-null `stage1_prompt` in the matching crowd variant. Read it as the sole textual source for the crowd's member types, shared design language, clothing, equipment, and stable visible distinctions. Discard Stage 1 illustration, background, camera, framing, and rendering instructions, then state the extracted design facts directly and apply the crowd presentation, lighting, and finish constraints above. Tell the image model to use the attached image as the visual reference for that crowd. Allow explicit user-requested Stage 2 presentation changes, but do not add unsupported member designs or environment content. Do not claim to have inspected the image or mention the prior prompt or workflow stage.

@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Graveyard-Wrecked-Ship",
+  "type": "scene",
+  "name": "墓场漂流残船",
+  "description": "漂浮在船只墓场内、包含外露甲板与下层舱室的废弃船体。",
+  "attributes": {
+    "layout": "破损外甲板通过开口通往下层舱室，舱内保留破碎窗框、狭窄角落与可遮挡外部视线的墙体。",
+    "scale": "中型废弃飞艇船体",
+    "ambient_sound": "高空风穿过破窗的呼啸声与松动船体结构的吱嘎声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Graveyard-Wrecked-Ship-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "漂浮的废弃木质飞艇船体，具有破损外甲板、通往下层的开口、破碎窗框、狭窄舱内角落与裸露结构。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

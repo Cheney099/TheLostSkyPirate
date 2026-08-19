@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Floating-Ship-Graveyard",
+  "type": "scene",
+  "name": "漂浮船只墓场",
+  "description": "由大量废弃飞艇与破损船体组成、可供飞船穿行的广阔空中遗迹区。",
+  "attributes": {
+    "layout": "数十艘破损木质飞艇、断裂船体、撕裂船帆、巨型废弃气囊船与古老货船分布在不同高度，残骸之间形成狭窄而曲折的飞行通道。",
+    "scale": "巨型空中残骸场",
+    "ambient_sound": "高空风声、松动船体吱嘎声与悬浮残骸的金属摩擦声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Floating-Ship-Graveyard-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "广阔的空中船只墓场，数十艘不同腐朽程度的木质飞艇、断裂船体、撕裂船帆、巨型废弃气囊船和锈蚀古老货船漂浮在多个高度。",
+      "stage1_prompt": "Pirate skyship graveyard suspended among clouds, formed only from derelict wooden sailing vessels. A shattered corsair wreck dominates the foreground; rails, ribs, torn planks, and rigging occlude the left and upper frame. The elevated camera looks diagonally downward through staggered layers: large wrecks cross the middle level, smaller hulls hang far beneath, and ships descend into cloud banks. Preserve a winding central flight corridor and voids between hull clusters. Vary hull profiles, masts, and sails. Oak vessels carry figureheads, cannon ports, deck cabins, emblems, mismatched repairs, patterned sails, patched pennants, ropes, boarding lines, brass propellers, boilers, copper pipes, and pressure housings. Damaged planks, sails, rigging, and mechanisms remain attached to their hulls; no fragments, people, active vessels, blimps, freighters, automatons, buildings, land, or text. Monochrome environment sketch on white paper, crisp varied-width ink lines, line hierarchy, minimal texture, no color, lighting, shading, gradients, or painterly rendering. --ar 16:9",
+      "image": null
+    }
+  ]
+}

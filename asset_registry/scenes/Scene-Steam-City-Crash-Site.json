@@ -13,6 +13,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "蒸汽城内由砖石建筑、金属工厂结构与街面组成的事故街区。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

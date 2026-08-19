@@ -10,6 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "一把用于工业铲煤的铲具。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

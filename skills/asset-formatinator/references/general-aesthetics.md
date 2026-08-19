@@ -2,7 +2,7 @@
 
 ## Scope
 
-Apply this guide to every Alta asset. It supplies visual language only. The brief supplies the requested subject and function; `STORY-REFERENCE.md` supplies named-story continuity; generator references supply prompt construction.
+Apply this guide to every Alta asset. It supplies visual language only. The brief supplies the requested subject and function; `scripts/STORY-REFERENCE.md` supplies named-story continuity; generator references supply prompt construction.
 
 ## World
 
@@ -37,7 +37,7 @@ Favor rich storybook color anchored in believable materials. Apply the faction r
 
 ## Integrated Mechanical Elements
 
-Mechanical limbs, weapons, machinery, and automatons follow the same functional discipline as the rest of the world. Show how they attach, articulate, carry load, transfer force, and receive power. Use `character-generator.md` for character integration, `prop-generator.md` for object and machine construction, and `STORY-REFERENCE.md` for established identity.
+Mechanical limbs, weapons, machinery, and automatons follow the same functional discipline as the rest of the world. Show how they attach, articulate, carry load, transfer force, and receive power. Use `character-generator.md` for character integration, `prop-generator.md` for object and machine construction, and `scripts/STORY-REFERENCE.md` for established identity.
 
 ## Cinematic Finish
 

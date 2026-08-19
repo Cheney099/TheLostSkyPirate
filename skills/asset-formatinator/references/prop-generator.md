@@ -2,7 +2,7 @@
 
 ## Style Guidance
 
-Read `general-aesthetics.md` before writing. Read `STORY-REFERENCE.md` when the brief depends on an established owner, faction, location, event, asset, or timeline fact.
+Read `general-aesthetics.md` before writing. Read `scripts/STORY-REFERENCE.md` when the brief depends on an established owner, faction, location, event, asset, or timeline fact.
 
 ### Shared Construction
 
@@ -72,10 +72,10 @@ Use crisp varied-width monochrome ink linework on a white paper or neutral light
 
 ## Nano Banana Pro Prop Format
 
-Use this section for Stage 2 only. The attached image is the fixed visual source for the prop's identity, silhouette, proportions, construction, operating parts, and major visible features. Keep those facts unchanged. Do not write this reference-handling instruction into the final prompt.
+Use this section for Stage 2 only. Require a non-null `stage1_prompt` in the matching prop variant. Read that prompt as the sole textual source for the asset's identity, silhouette, proportions, construction, operating parts, moving parts, and functional logic. Discard Stage 1 line-art treatment, background, camera, framing, aspect ratio, and other concept-presentation instructions. The final prompt tells the image model to use the attached Stage 1 image, which the user supplies externally. Do not inspect, verify, or request that image.
 
 Resolve the prop as one photorealistic live-action object through real materials, finish, color, and status-appropriate craftsmanship. State the dominant body material and color, supporting material, metal hardware, surface finish, and small accent details. Apply fantasy-Baroque craft through engraved metal, layered enamel, carved wood, colored glass, embossed leather, inlay, relief panels, patterned bindings, or sculpted fittings according to the prop's importance and function.
 
 Present one complete object against a plain white seamless studio background. Use a natural three-quarter product-photography view at a height appropriate to the object's function, with soft directional studio light, controlled fill, clear material response, physically plausible perspective, and a grounded contact shadow or neutral support. Use the aspect ratio selected in Stage 1 unless the user requests another. Render at 4K. Keep people, hands, environments, decorative pedestals, labels, borders, callouts, and exploded diagrams out unless the user explicitly requests them.
 
-Read the Style Guidance internally to resolve the prop's materials, color, finish, and status-appropriate craftsmanship. Write one concise prompt for a photorealistic studio image of the same object shown in the attached image. State the resulting visible material, color, finish, and surface treatment directly, alongside the view, background, aspect ratio, resolution, and any explicit user-requested change. Do not restate story-derived details or a visual inventory from the attached image.
+Read the Style Guidance internally to resolve the prop's materials, color, finish, and status-appropriate craftsmanship. Write one concise prompt for a photorealistic studio image of the object defined by the logged Stage 1 design and tell the image model to use the attached image as its visual reference. State a compact set of stable construction and functional features extracted from `stage1_prompt`, then state the resulting visible material, color, finish, and surface treatment alongside the view, background, aspect ratio, resolution, and any explicit user-requested change. Refer to the external source only as `the attached image` or `the reference image`; do not claim to have inspected it, mention the prior prompt or workflow stage, or add unsupported construction or story detail.

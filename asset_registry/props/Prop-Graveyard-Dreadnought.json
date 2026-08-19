@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Graveyard-Dreadnought",
+  "type": "prop",
+  "name": "墓场巨型无畏机甲",
+  "description": "三十英尺高的巨型战斗自动机甲，以腿部与背部火箭推进器悬停和飞行；光学传感器自主扫描并锁定物体，一只集成式巨臂可转换为大型能量炮，运行时发出古老齿轮研磨声、火箭轰鸣与重复机械语音。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Graveyard-Dreadnought-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "三十英尺高的庞大黄铜装甲机甲，表面呈长期暴露后的陈旧质感，装有红色光学传感器、腿部与背部火箭推进器，其中一只巨臂集成大型炮管。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

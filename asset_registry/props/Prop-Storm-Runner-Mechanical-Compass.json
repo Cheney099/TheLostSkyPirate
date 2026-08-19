@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Storm-Runner-Mechanical-Compass",
+  "type": "prop",
+  "name": "风暴奔行者号机械罗盘",
+  "description": "大型机械导航仪表，通过方向刻度与内部齿轮持续指示航向，并与飞艇导航系统联动；运转时发出轻微齿轮转动与指针校准声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Mechanical-Compass-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "嵌装式大型圆形机械罗盘，表盘带完整方向刻度，内部可见齿轮与可转动指针。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

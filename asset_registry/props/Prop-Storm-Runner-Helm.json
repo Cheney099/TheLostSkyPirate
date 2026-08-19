@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Storm-Runner-Helm",
+  "type": "prop",
+  "name": "风暴奔行者号船舵",
+  "description": "大型机械船舵，通过轮缘把手旋转并带动内部传动结构改变飞艇航向，转向时发出木质结构受力声与机械联动声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Helm-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "接近人体高度的巨大黄铜轮式船舵，轮缘均匀分布粗壮把手，并与机械传动结构相连。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

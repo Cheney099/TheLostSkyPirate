@@ -2,14 +2,14 @@
   "id": "Char-John-Silver-30s",
   "type": "character",
   "name": "三十多岁的乔纳森·西尔弗勋爵",
-  "description": "三十多岁；身高约183厘米；男性中低音，低沉沉稳，中性英语口音。",
+  "description": "三十多岁；身高约183厘米；男性中低音，低沉沉稳，英式英语口音。",
   "attributes": {
     "height": "约183厘米",
     "voice": {
       "gender": "男性",
       "pitch": "中低音",
       "timbre": "低沉沉稳",
-      "accent": "中性英语口音"
+      "accent": "英式英语口音"
     }
   },
   "variants": [
@@ -18,6 +18,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "三十多岁，英俊整洁，具有贵族气质。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

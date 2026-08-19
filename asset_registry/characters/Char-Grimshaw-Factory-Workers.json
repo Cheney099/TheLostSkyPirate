@@ -12,6 +12,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "一群工厂劳工。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

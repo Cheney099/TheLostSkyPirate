@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Silver-Puzzle-Box",
+  "type": "prop",
+  "name": "银色机关盒",
+  "description": "小型机械机关盒，由相互咬合的齿轮与可分离金属接缝构成；按正确顺序驱动机关后外壳开启并投射三维导航图，启动时发出低沉机械嗡鸣与连续齿轮咔嗒声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Silver-Puzzle-Box-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "小巧的银色金属盒，表面覆盖精密齿轮、奇异雕纹与细密金属接缝，顶部刻有船舵形徽记。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

@@ -11,6 +11,7 @@
 !skills/**/*
 !scripts/
 !scripts/.gitkeep
+!scripts/STORY-REFERENCE.md
 !storyboards/
 !storyboards/.gitkeep
 !storyboards/*.md
@@ -42,3 +43,6 @@
 
 # Legacy visual reference at project root
 !*视觉摄影与场景风格分析.md
+
+# Local video renders must never be committed
+/videos/

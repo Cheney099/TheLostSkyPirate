@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Steam-City-Docks",
+  "type": "scene",
+  "name": "蒸汽城飞艇码头",
+  "description": "蒸汽城内供飞艇停泊、装卸货物与乘员登船的繁忙港区。",
+  "attributes": {
+    "layout": "多座飞艇泊位沿港区排列，登船跳板连接码头与船体，成堆货物分隔出装卸通道，上空设有商船与货运飞艇航线。",
+    "scale": "大型城市港区",
+    "ambient_sound": "人群嘈杂声、货物搬运声、蒸汽喷放声与飞艇螺旋桨声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Steam-City-Docks-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "繁忙的蒸汽朋克飞艇码头，设有泊位、登船跳板、成堆货物以及往来的商船和货运飞艇。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

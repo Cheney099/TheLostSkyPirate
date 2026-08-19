@@ -1,0 +1,19 @@
+{
+  "id": "Scene-Floating-Island-of-Silver",
+  "type": "scene",
+  "name": "白银浮岛",
+  "description": "悬浮于高空、可供飞艇接近与探索的巨型岛屿地标。",
+  "attributes": {
+    "scale": "巨型浮空岛屿"
+  },
+  "variants": [
+    {
+      "id": "Scene-Floating-Island-of-Silver-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "规模庞大的浮空岛屿，巨大陆地轮廓悬浮在云层之间。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

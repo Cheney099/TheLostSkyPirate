@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Storm-Runner",
+  "type": "prop",
+  "name": "风暴奔行者号",
+  "description": "大型木质蒸汽飞艇，以三根桅杆及可收放船帆提供主要升力与航行动力，船尾下方的黄铜螺旋桨持续推进；通过机械船舵、齿轮拉杆与罗盘控制航向，运行时伴随螺旋桨转动、索具绷紧、木结构吱嘎与机械齿轮声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "大型木质空中帆船，设有三根木制桅杆、横桁间展开的白色船帆、复杂索具与栏杆，船尾下方安装黄铜螺旋桨。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

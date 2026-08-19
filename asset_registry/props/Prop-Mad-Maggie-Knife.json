@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Mad-Maggie-Knife",
+  "type": "prop",
+  "name": "疯玛吉的腿鞘短刀",
+  "description": "紧凑型近身短刀，可快速从贴身刀鞘拔出，用于切割绳索或短距离防卫。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Mad-Maggie-Knife-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一把带短金属刀刃和握柄的紧凑型短刀，配有可固定在腿侧的贴身刀鞘。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

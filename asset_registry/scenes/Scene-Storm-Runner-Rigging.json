@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Storm-Runner-Rigging",
+  "type": "scene",
+  "name": "风暴奔行者号高位索具区",
+  "description": "环绕飞艇桅杆与船帆、供船员攀爬和调整帆面的高位作业空间。",
+  "attributes": {
+    "layout": "绳索网、攀爬绳梯、横桁与帆控缆绳围绕三根高桅杆纵横交错，下方直通开放式主甲板。",
+    "scale": "跨越三根桅杆高度的垂直作业区",
+    "ambient_sound": "高空风声、绳索绷紧摩擦声、桅杆吱嘎声与船帆拍动声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Rigging-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "由三根木制高桅杆、横桁、白色船帆、绳索网、攀爬绳梯和帆控缆绳构成的高位索具区。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

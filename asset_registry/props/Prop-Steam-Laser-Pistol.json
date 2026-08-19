@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Steam-Laser-Pistol",
+  "type": "prop",
+  "name": "蒸汽动力激光手枪",
+  "description": "手持式蒸汽动力能量武器，通过机械动力组件为短枪管供能并发射激光束，启动与充能时发出机械运转声和能量噼啪声。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Steam-Laser-Pistol-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一把手持式蒸汽动力激光手枪，设有握把、短枪管与外露机械动力组件。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

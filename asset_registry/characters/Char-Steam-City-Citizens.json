@@ -10,6 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "外形与服装多样的都市平民群体。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

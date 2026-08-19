@@ -69,6 +69,7 @@ Use one JSON file per asset. The filename must equal the top-level `id` plus `.j
       "status": "Base",
       "is_base": true,
       "appearance": "Reusable canonical appearance with no segment-specific condition.",
+      "stage1_prompt": null,
       "image": null
     }
   ]
@@ -88,6 +89,8 @@ Allowed ID prefixes:
 - `Scene-`
 
 Every file must contain exactly one base variant. Variant IDs remain stable after creation.
+
+Every variant also contains `"stage1_prompt": null` until the matching concept workflow writes its exact Stage 1 prompt.
 
 ## Universal Attributes
 
@@ -170,6 +173,7 @@ apply the same specificity inside the single natural-language `description`.
   structure, scale, movement, operation, and characteristic sound without labels or subsections. It must remain valid outside
   the screenplay scene and must not narrate who owns, uses, deploys, encounters, or is affected by the asset.
 - A scene `description` identifies the location and its universal function.
+- `stage1_prompt` stores the matching generator's exact final Stage 1 prompt. For every asset type, it is the local agent's sole textual source for established design decisions in both Stage 2 and Stage 3. Stage 2 prompt wording assumes the user externally attaches the Stage 1 image, and Stage 3 prompt wording assumes the user externally attaches the Stage 2 image; those images are never inspected or verified by the local agent. The screenplay-only registry workflow initializes `stage1_prompt` as `null`, never infers it, and preserves any non-null value exactly. Producing a new complete Stage 1 prompt for that same variant replaces it immediately; replacement never affects another variant and never stores prompt history.
 - `variants[].appearance` contains the stable reusable visual form. For a character, it describes only the age/life-stage and
   wardrobe form named by that top-level asset; alternate ages or outfits belong in separate character JSON files.
 - Do not include camera direction, aspect ratio, delivery resolution, temporary condition, current pose, current emotion, or
@@ -192,7 +196,7 @@ apply the same specificity inside the single natural-language `description`.
 ## Updating Existing Files
 
 - Read the existing record and all variants before editing.
-- Preserve stable IDs, approved appearance text, and image metadata.
+- Preserve stable IDs, approved appearance text, image metadata, and non-null `stage1_prompt` values.
 - When an existing character record combines distinct age/life-stage or outfit forms as variants, split those forms into
   separate top-level assets without inventing unsupported appearance details. Preserve each real image object with the form it
   depicts, and report any uncertain mapping instead of guessing.
@@ -218,6 +222,7 @@ Before delivery, verify:
 - Every record has `id`, `type`, `name`, `description`, `attributes`, and non-empty `variants`.
 - Every record has exactly one `is_base: true` variant.
 - Every variant has `id`, `status`, `is_base`, `appearance`, and `image`.
+- Every variant also has `stage1_prompt`; its value is either `null` or a non-empty string written by the matching Stage 1 prompt workflow.
 - JSON parses successfully as UTF-8.
 - Universal voice, movement, operation, sound, scale, and layout facts are retained.
 - Every individual character has a screenplay-derived age/life stage, metric height, and complete four-field voice object.

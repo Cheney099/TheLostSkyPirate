@@ -10,6 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "明亮蓝白配色，木质船体、高耸桅杆与船帆，船尾下方装有螺旋桨。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

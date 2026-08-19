@@ -14,6 +14,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "广阔的工业都市，由高耸砖砌烟囱、方形金属工厂、巨型黄铜齿轮、往复活塞与空中飞艇航线组成。",
+      "stage1_prompt": null,
       "image": null
     }
   ]

@@ -1,0 +1,25 @@
+{
+  "id": "Char-Evil-Pirate-Captain",
+  "type": "character",
+  "name": "袭击者空盗船长",
+  "description": "成年，约四十岁；身高约185厘米；男性低音，冷硬凶狠，英式英语口音。",
+  "attributes": {
+    "height": "约185厘米",
+    "voice": {
+      "gender": "男性",
+      "pitch": "低音",
+      "timbre": "冷硬凶狠",
+      "accent": "英式英语口音"
+    }
+  },
+  "variants": [
+    {
+      "id": "Char-Evil-Pirate-Captain-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "一名成年男性空盗船长，穿凶悍的空盗首领服装并佩剑。",
+      "stage1_prompt": "Air-pirate captain, 40 years old and 185 cm tall, with a brutish frame, thick neck, barrel chest, broad shoulders, heavy arms, and square hands. Angular scarred face, cold deep-set eyes, swept-back close-cropped dark hair, gray temples.\n\nHis vintage silhouette comes from a charcoal Victorian naval frock coat with broad lapels, fitted waist, high collar, and long split tails. A deep-red patterned waistcoat and red knotted sash are the only red garments. Blackened iron boarding armor sits over the coat: riveted breastplate, articulated gorget, oversized asymmetrical pauldrons, strapped vambraces, hip guards, knee cops, and heavy deck boots. Brown leather straps and brass buckles secure every plate.\n\nA copper pressure vessel and hand valves power external piston braces at the shoulders and elbows. Exposed ratchets, chain drives, braided hoses, and a hand-cranked back winch keep the machinery visibly Victorian. One forearm carries a brass pneumatic utility grappling launcher with a blunt hook and cable drum; the other has a black iron locking gauntlet. No swords, firearms, knives, or other weapons.\n\nFull-body planted stance on a simplified dockside background.\n\nComplete flat-color 2D production character concept, six-and-a-half-head proportions, crisp varied-width ink linework, opaque flat colors, minimal texture, no lighting, shading, gradients, or painterly rendering.",
+      "image": null
+    }
+  ]
+}

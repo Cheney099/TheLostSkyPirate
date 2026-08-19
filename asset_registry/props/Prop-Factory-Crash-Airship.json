@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Factory-Crash-Airship",
+  "type": "prop",
+  "name": "事故飞艇",
+  "description": "以古代帆船结构为基础、由船尾下方螺旋桨驱动飞行的蒸汽飞艇。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Factory-Crash-Airship-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "木质船体、高耸桅杆与船帆，船尾下方装有螺旋桨。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

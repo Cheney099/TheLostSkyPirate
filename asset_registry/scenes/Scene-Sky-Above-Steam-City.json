@@ -1,0 +1,21 @@
+{
+  "id": "Scene-Sky-Above-Steam-City",
+  "type": "scene",
+  "name": "蒸汽城上空",
+  "description": "连接蒸汽城空中航线与开阔高空的城市上方飞行区域。",
+  "attributes": {
+    "layout": "城市上方覆盖一层灰色工业烟霾，飞艇穿过烟霾后进入更高处的开阔蓝天。",
+    "scale": "广阔城市空域",
+    "ambient_sound": "高空风声与远近飞艇的螺旋桨声。"
+  },
+  "variants": [
+    {
+      "id": "Scene-Sky-Above-Steam-City-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "蒸汽城上方的广阔空域，下层为灰色工业烟霾，上层为开阔蓝天。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}

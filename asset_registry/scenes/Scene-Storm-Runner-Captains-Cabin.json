@@ -1,0 +1,20 @@
+{
+  "id": "Scene-Storm-Runner-Captains-Cabin",
+  "type": "scene",
+  "name": "风暴奔行者号船长舱",
+  "description": "位于飞艇主甲板旁、可供人员暂时避入的封闭式船长舱室。",
+  "attributes": {
+    "layout": "舱室通过一扇可关闭的木门直接连接主甲板，内部为独立封闭空间。",
+    "scale": "小型船舱"
+  },
+  "variants": [
+    {
+      "id": "Scene-Storm-Runner-Captains-Cabin-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "飞艇上的封闭式木质船长舱，设有一扇通往主甲板的木门。",
+      "stage1_prompt": null,
+      "image": null
+    }
+  ]
+}
