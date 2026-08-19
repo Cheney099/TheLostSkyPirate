@@ -1,0 +1,6 @@
+# Keep collaboration documents consistent across Windows and macOS.
+*.md text eol=lf
+*.json text eol=lf
+
+# Future append-only logs: one complete JSON object per line, append only.
+*.jsonl text eol=lf merge=union

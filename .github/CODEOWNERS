@@ -1,0 +1,5 @@
+# Both maintainers are visible reviewers for every tracked path.
+* @Cheney099 @Chow-Punk
+
+# Registry changes always need explicit maintainer attention.
+/asset_registry/ @Cheney099 @Chow-Punk
