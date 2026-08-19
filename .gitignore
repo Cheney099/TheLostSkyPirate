@@ -3,6 +3,11 @@
 
 # Repository rule file
 !.gitignore
+!.gitattributes
+!README.md
+!AGENTS.md
+!.github/
+!.github/**
 
 # Track empty project structure
 !skills/
