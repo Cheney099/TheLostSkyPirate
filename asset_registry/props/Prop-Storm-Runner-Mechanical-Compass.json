@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "嵌装式大型圆形机械罗盘，表盘带完整方向刻度，内部可见齿轮与可转动指针。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Victorian mechanical skyship compass concept, a large circular navigational dial suspended in a two-axis gimbal beneath a protective domed glass hood, complete directional tick scale around a central pivoting needle, exposed calibration gears and counterweights beneath the dial, locking lever, shock-isolating base, and a mechanical output shaft connecting the reading to a steering system. One complete functional instrument in intact condition, close three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 1:1 --style raw --s 70 --no people, hands, deck environment, scenery, color, readable text, labels, border, digital screen, electronic compass, futuristic interface",
       "image": null
     }
   ]

@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "紧凑的黑色战舰，船尾下方设有机械舱门。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Compact high-speed Victorian steam sky warship concept, a narrow predatory timber sailing hull with iron reinforcement, two sharply raked masts carrying tight practical sails, armored ram prow, twin stern screw propellers driven by exposed side piston engines and connected pressure pipes, broad riveted deployment hatch integrated beneath the stern and lowered by heavy chain winches for releasing a fifteen-foot machine, raised armored bridge ridge and short boiler exhausts creating a severe distance-readable silhouette. One complete 2D vehicle design, low side three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 4:3 --style raw --s 85 --no people, scenery, clouds, color, text, labels, border, spacecraft silhouette, jet nacelles, sci-fi panels, LEDs",
       "image": null
     }
   ]

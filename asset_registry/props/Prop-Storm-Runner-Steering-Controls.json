@@ -1,0 +1,17 @@
+{
+  "id": "Prop-Storm-Runner-Steering-Controls",
+  "type": "prop",
+  "name": "风暴奔行者号操舵与导航控制台",
+  "description": "用于控制天空船航向、推进、船帆张力与升力压力的完整机械控制台，由巨型船舵、独立稳定的机械罗盘、长木质控制台、六根控制杆、压力表、齿轮、链条和传动轴组合而成。",
+  "attributes": {},
+  "variants": [
+    {
+      "id": "Prop-Storm-Runner-Steering-Controls-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "浅马蹄形长木质控制台环绕巨型船舵的下部，中央嵌装玻璃罩双轴机械罗盘，左右控制翼各设三根黄铜控制杆、圆形压力表与微调轮，台面下方可见完整的齿轮、链条和传动轴。",
+      "stage1_prompt": "Use the two attached reference images as strict design references. Combine the existing giant ship's helm and mechanical compass into one coherent Victorian steampunk skyship steering console while preserving their recognizable proportions, construction, spokes, pedestal, glass dome, gimbal rings, dial, needle, and exposed mechanisms. Create a long, shallow horseshoe-shaped control station built around the helm. The enormous wheel rises vertically from the central rear pedestal, remaining the dominant silhouette. Its axle enters a visible cast-metal reduction gearbox, toothed steering quadrant, chain wheels, tensioners, and connecting rods that continue beneath the deck. Do not attach the compass to the rotating wheel or axle. Install the mechanical compass as an independent shock-isolated navigation module in the center of the wooden console, directly below and slightly forward of the wheel hub. Preserve its glass dome and two-axis gimbal so the dial remains level while the ship tilts. A thin low-torque mechanical output shaft links the compass to a small course-deviation indicator without physically steering the ship. Extend curved finished-oak control wings to both sides, containing six tall brass control levers, several round analog pressure gauges, mechanical trim wheels, and clearly routed gear linkages. The controls regulate paired propeller power, sail tension, lifting pressure, and steering brake. Every gear, shaft, pipe, and lever has a readable mechanical purpose. Show one complete integrated console as a single designed object, front three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework, restrained cross-hatching, white paper background, minimal texture, and clean Victorian engineering concept-art presentation. No people, hands, ship deck, scenery, color, text, labels, border, digital screens, electronics, futuristic cockpit, random decorative gears, or separate disconnected objects.",
+      "image": null
+    }
+  ]
+}

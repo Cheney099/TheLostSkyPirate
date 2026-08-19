@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "体量巨大的工业蒸汽机，由投煤口、熔炉与锅炉主体、粗大管道、往复活塞和外露齿轮组成。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Massive late-Victorian stationary steam engine concept, a long cast-iron engine bed carrying twin vertical cylinders and crosshead guides, giant reciprocating rods driving one dominant spoked flywheel, exposed valve gear and centrifugal governor regulating motion, thick pressure pipes linking the cylinders to a riveted coal-fired boiler with a broad furnace mouth, side feed platform, guarded handwheel controls, heavy foundation feet, and maintenance stairs explaining scale and load transfer. One complete engineered machine, waist-height three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 4:3 --style raw --s 75 --no people, factory interior, steam clouds, flames, color, text, labels, border, turbine housing, digital controls, futuristic machinery",
       "image": null
     }
   ]

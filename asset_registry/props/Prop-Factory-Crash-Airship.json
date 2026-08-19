@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "木质船体、高耸桅杆与船帆，船尾下方装有螺旋桨。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Compact Victorian steam delivery skyship concept, a practical timber sailing hull with two staggered masts carrying a simple working sail plan, enclosed raised passenger-and-cargo cabin amidships, reinforced side cargo hatch with rope-and-pulley loading boom, single stern screw propeller driven by a visible piston crank, compact boiler and short smokestack integrated behind the cabin, sturdy landing skids and structural bracing suited to frequent courier flights. One complete intact 2D vehicle design before crash damage, elevated side three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 4:3 --style raw --s 78 --no people, scenery, clouds, fire, smoke, damage, color, text, labels, border, airplane fuselage, jet engine, spacecraft, digital panels",
       "image": null
     }
   ]

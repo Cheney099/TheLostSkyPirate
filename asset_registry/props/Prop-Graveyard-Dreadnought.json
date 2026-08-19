@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "三十英尺高的庞大黄铜装甲机甲，表面呈长期暴露后的陈旧质感，装有红色光学传感器、腿部与背部火箭推进器，其中一只巨臂集成大型炮管。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Thirty-foot Victorian steam siege automaton, overwhelming octopus silhouette: riveted pressure-vessel body hangs low beneath an armored dome, sensor block buried behind a shuttered optic. Eight articulated limbs span a footprint, built from cast-iron drum joints, bevel gears, chain drives, pistons, hoses, locking collars, and clamp feet. Four act as bridge supports, two seize hulls, rear pair mount bell-mouthed rocket thrusters fed by a boiler manifold. One forward limb terminates in an energy cannon with rotating induction rings, recoil rails, and flywheel generator. Machinery crowds every joint; curved armor protects only the boiler. Low body, towering limb arches, and reach create crushing scale. One complete 2D machine design, low three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean presentation --ar 2:3 --style raw --s 100 --no people, scenery, color, text, labels, border, organic tentacles, cute robot, smooth limbs, sleek sci-fi, digital panels, LEDs",
       "image": null
     }
   ]

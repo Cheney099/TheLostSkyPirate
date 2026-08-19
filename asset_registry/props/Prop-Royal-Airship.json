@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "明亮蓝白配色，木质船体、高耸桅杆与船帆，船尾下方装有螺旋桨。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Refined Victorian royal steam skyship concept, a graceful carved timber sailing hull with a high sweeping prow, three tall masts carrying a disciplined layered sail plan and traditional rigging, paired screw propellers beneath the stern linked to exposed piston shafts and pressure lines, raised aft command cabin with curved period windows, a ship-wheel crest worked into the prow structure, compact boiler exhausts tucked behind the cabin so the maritime hull and masts remain dominant. One complete 2D vehicle design in pristine pre-damage condition, low side three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 4:3 --style raw --s 85 --no people, scenery, clouds, color, text, labels, border, futuristic yacht, jet engine, spacecraft, digital panels",
       "image": null
     }
   ]
