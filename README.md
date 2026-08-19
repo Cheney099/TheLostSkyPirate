@@ -1,40 +1,133 @@
-# The Lost Sky Pirate
+# The Lost Sky Pirate — GitHub 使用说明
 
-Private production repository for scripts, prompts, storyboards, asset registries, and project skills.
+项目地址：<https://github.com/Cheney099/TheLostSkyPirate>
 
-## Two-person collaboration
+本仓库由 Cheney 和 Vincent 共同维护。日常工作可以直接交给 Codex 完成，不需要自己输入复杂的 Git 命令。
 
-- `main` is the stable shared branch. Do not use it as a working branch.
-- Cheney works on `sync/Cheney/<scope>` branches.
-- Vincent works on `sync/Vincent/<scope>` branches.
-- One branch and one pull request should cover one episode or one clearly named asset batch.
-- Before starting, agree who owns the episode or asset batch. Do not edit the same episode or registry file at the same time.
-- Merge through a pull request after reviewing the changed-file list and checklist.
+## 一、最重要的规则
 
-Full operating rules are in [AGENTS.md](AGENTS.md).
+1. `main` 是稳定主分支，不直接在 `main` 上工作或上传。
+2. 每次任务创建一个新分支，一集或一批资产对应一个分支和一个 PR。
+3. Cheney 使用 `sync/Cheney/<任务>`，Vincent 使用 `sync/Vincent/<任务>`。
+4. 开始工作前先说明本次由谁负责哪一集，避免两个人同时修改同一个文件。
+5. 上传前只提交本次任务相关文件，不要混入其他集、缓存、临时文件或本地输出。
+6. 所有更新通过 PR 合入 `main`，由另一位维护者检查和批准。
 
-## Daily workflow
+完整的多人协作约定见 [AGENTS.md](AGENTS.md)。
 
-```bash
-git switch main
-git pull --ff-only origin main
-git switch -c sync/YourName/EPxx-short-task
+## 二、第一次使用
 
-# Work, then stage only the files belonging to this task.
-git add prompts/EPxx.md storyboards/EPxx.md segment_mapping/EPxx.md
-git commit -m "EPxx: short description"
-git push -u origin HEAD
-```
+如果电脑上还没有这个项目，把下面这句话发给 Codex：
 
-Open a pull request into `main`, have the other person review it, then merge. After merging, delete the task branch and start the next task from the updated `main`.
+> 请把 https://github.com/Cheney099/TheLostSkyPirate 克隆到我的电脑，并检查项目是否正常。
 
-## Repository boundaries
+如果电脑上已经有项目，直接在 Codex 中打开项目文件夹即可。
 
-- Git tracks text deliverables and project instructions.
-- Local video renders remain outside Git under `/videos/`.
-- Do not force-add ignored images, videos, temporary exports, credentials, or caches.
-- Asset registry entries stay as one JSON file per asset; avoid combining them into a shared monolithic JSON file.
+## 三、开始工作前：拉取 GitHub 最新内容
 
-## GitHub plan limitation
+每次开始修改前，把下面这句话发给 Codex：
 
-This private repository's current GitHub plan does not expose branch protection or repository rulesets. Until the plan is upgraded (or the repository becomes public), the pull-request requirement is a team rule rather than a server-enforced restriction.
+> 请拉取 origin/main 的最新内容。先保护本地未提交修改；没有冲突就直接完成，有冲突就停下来告诉我。
+
+Codex 完成后，确认它明确告诉你：
+
+- 已经拉到最新 `main`；
+- 本地修改没有丢失；
+- 是否存在冲突。
+
+如果出现冲突，再发送：
+
+> 不要自动选择全部本地或全部远程。请列出冲突文件和两边的差异，等我决定。
+
+## 四、让 Codex 开始一项新任务
+
+Cheney 示例：
+
+> 请从最新 main 创建分支 sync/Cheney/EP02-prompts，然后只处理 EP02。
+
+Vincent 示例：
+
+> 请从最新 main 创建分支 sync/Vincent/EP03-storyboard，然后只处理 EP03。
+
+任务名称保持简短，例如：
+
+- `EP02-prompts`
+- `EP03-storyboard`
+- `EP05-registry`
+- `shared-airship-assets`
+
+## 五、上传自己的更新
+
+完成修改后，把下面这句话发给 Codex：
+
+> 请把我这次对 EP02 的更新提交到当前任务分支，并创建 PR 到 main。只提交本次相关文件，不要包含其他改动。完成后把 PR 链接发给我。
+
+Codex 应当自动完成：
+
+1. 检查修改文件；
+2. 排除无关文件；
+3. 验证修改过的 JSON；
+4. 创建提交；
+5. 推送任务分支；
+6. 创建发往 `main` 的 PR；
+7. 返回 PR 链接。
+
+不要让 Codex 直接推送到 `main`。如果它发现多个任务混在一起，应当先拆分再上传。
+
+## 六、更新已经存在的 PR
+
+如果 PR 已经创建，后来又修改了内容，发送：
+
+> 请把当前修改提交并推送到 PR #编号 的分支。只包含本次任务相关文件，完成后告诉我结果。
+
+新提交推送后，PR 会自动更新，不需要重新创建 PR。因为仓库启用了保护规则，新提交会让之前的批准失效，需要另一位维护者重新检查。
+
+## 七、让 Codex 检查 PR
+
+把下面这句话发给 Codex：
+
+> 请检查 PR #编号。确认它只包含本次任务内容，并检查冲突、JSON 错误、误传文件和跨集修改。先不要改文件，告诉我检查结果。
+
+检查通过后，由另一位维护者在 GitHub 上批准。仓库要求至少一人批准，并且所有讨论都解决后才能合并。
+
+合并时统一使用 **Squash and merge**。合并完成后，GitHub 会自动删除远程任务分支。
+
+## 八、合并后同步本地项目
+
+PR 合并后，把下面这句话发给 Codex：
+
+> 请切回 main，拉取最新内容，并清理已经合并的本地任务分支。不要删除未合并的分支。
+
+## 九、共享文件怎么避免冲突
+
+- 一集只由一个人负责，避免同时修改同一集的 prompt、storyboard 和 segment mapping。
+- `asset_registry/` 保持一个资产一个 JSON 文件，不要合并成一个巨大的共享 JSON。
+- 不要批量格式化、重排或重写与当前任务无关的 JSON。
+- 普通 `.json` 被两个人同时修改时必须人工检查，不能直接覆盖其中一边。
+- 未来如果使用 `.jsonl` 日志，只允许在文件尾追加完整的新行，不要重排或美化。
+
+## 十、哪些内容不能上传
+
+不要上传：
+
+- 视频成片和本地渲染输出；
+- 图片缓存、临时导出和调试日志；
+- Token、密码、登录状态和其他凭证；
+- 与当前任务无关的文件；
+- 另一位维护者尚未合并的工作。
+
+仓库是公开仓库，提交到 GitHub 的内容任何人都可以查看。上传前务必确认没有隐私信息、客户机密或无权公开的素材。
+
+## 十一、最常用的三个简单提示词
+
+### 拉取最新内容
+
+> 请拉取 origin/main 的最新内容。先保护本地修改；有冲突就停下来告诉我。
+
+### 上传本次更新
+
+> 请把本次更新提交到任务分支并创建 PR 到 main。只包含本次相关文件，完成后把 PR 链接给我。
+
+### 检查 PR
+
+> 请检查 PR #编号是否有冲突、错误或无关文件。先不要修改，告诉我结果。

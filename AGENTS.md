@@ -13,7 +13,7 @@ This repository is maintained by Cheney and Vincent, often through Codex or othe
 - The person who did not author the pull request reviews it before merge.
 - Pull-request title: `EPxx: <work>` or `Assets: <batch>`.
 
-Because GitHub branch protection is unavailable for this private repository on the current plan, these rules are enforced by the two maintainers and the pull-request checklist.
+GitHub branch protection enforces this workflow on `main`: ordinary changes require a pull request, at least one approval, resolved conversations, and linear history. Administrators follow the same protection rules.
 
 ## 2. Ownership and parallel work
 
