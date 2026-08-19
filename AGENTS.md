@@ -2,6 +2,23 @@
 
 This repository is maintained by Cheney and Vincent, often through Codex or other coding agents. Every person and agent must read this file before editing, generating, deleting, committing, or pushing files.
 
+## 0. Operator identity detection
+
+At the start of every new task, before any write, commit, push, branch creation, or pull-request action, determine the currently authenticated GitHub account:
+
+```bash
+gh api user --jq .login
+```
+
+Map the login to the operator identity and branch namespace:
+
+- `Cheney099` -> Cheney -> `sync/Cheney/<automatic-task-name>`
+- `Chow-Punk` -> Vincent -> `sync/Vincent/<automatic-task-name>`
+
+Do not rely on identity remembered from an earlier chat or task. If GitHub CLI authentication is unavailable, the login is different, or the identity cannot be determined, stop before writing and ask the user who is operating.
+
+When an existing task branch belongs to the detected operator and matches the current work, continue using it. Otherwise, create a new correctly named task branch from the latest `origin/main`. Never modify, push to, delete, or repurpose the other maintainer's unmerged branch.
+
 ## 1. Branch and pull-request rule
 
 - Treat `main` as stable and read-only for daily work.
