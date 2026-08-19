@@ -16,7 +16,7 @@ Read `references/general-aesthetics.md` for the project's shared visual language
 - **Characters and crowds:** `references/character-generator.md`
 - **Environments:** `references/environment-style-guide.md` for project-specific design, `references/environment-format.md` for the Default workflow, and `references/combined-environment-format.md` for the Combined workflow
 - **Props, vehicles, machinery, and automatons:** `references/prop-generator.md`
-- **Stage 3 sheets:** `references/stage3-asset-prompts.md`
+- **Multi-view assets:** `references/stage3-asset-prompts.md` for Default Stage 3 and Combined Environment Stage 2
 
 Read `scripts/STORY-REFERENCE.md` for established characters, factions, locations, objects, relationships, events, timeline forms, and episode-specific visual states.
 
@@ -67,9 +67,17 @@ For either environment workflow and for the default staged workflow used by othe
 
 ## Combined Environment Workflow
 
+This route has two stages.
+
+### Combined Stage 1: Cinematic Environment
+
 Use this route only after the user selects `Combined`. Read `environment-style-guide.md` and `combined-environment-format.md`, then write one MidJourney prompt that directly creates the cinematic environment image. The moodboard controls cinematic style; the prompt supplies the concrete location, architecture, layout, materials, function, story state, and composition required for continuity.
 
-Return the grounded brief and final combined prompt, immediately replace the matching scene variant's `stage1_prompt` with that complete prompt, and stop for approval. After the user approves the resulting MidJourney image and asks to continue, proceed directly to Stage 3. Do not write an environment Stage 2 prompt for this route.
+Return the grounded brief and final combined prompt, immediately replace the matching scene variant's `stage1_prompt` with that complete prompt, and stop for approval. Do not continue until the user approves the resulting MidJourney image and requests Combined Stage 2.
+
+### Combined Stage 2: Three-View Environment
+
+Require the matching scene variant's non-null `stage1_prompt`, then use the Environments route in `stage3-asset-prompts.md`. Treat the externally attached approved Combined Stage 1 image as the cinematic visual reference. Return three complete Nano Banana Pro prompts, each creating one standalone 16:9 view from its assigned camera position. Never combine the views into one image. If `stage1_prompt` is absent, stop rather than reconstructing the approved design from generic registry text or an image.
 
 ## Default Three-Stage Workflow
 
@@ -103,11 +111,11 @@ For an explicit edit to an existing live-action environment image, use only the 
 
 ### Stage 3: Multi-View Asset
 
-Require the matching variant's non-null `stage1_prompt`, then read `references/stage3-asset-prompts.md` and select the route for the asset. The final Stage 3 prompt must tell the image model to use the attached approved cinematic image. For the Default workflow this is the Stage 2 image; for a Combined environment this is the direct MidJourney image. The skill does not inspect, verify, request, or internally require that image. Classify non-character assets by physical scale and spatial role as `Human-Scale Props`, `Large Props`, or `Environments`.
+Require the matching variant's non-null `stage1_prompt`, then read `references/stage3-asset-prompts.md` and select the route for the asset. The final Default Stage 3 prompt must tell the image model to use the attached approved Stage 2 image. The skill does not inspect, verify, request, or internally require that image. Classify non-character assets by physical scale and spatial role as `Human-Scale Props`, `Large Props`, or `Environments`.
 
 For a character, prop, or special element, derive the written fixed design directly from `stage1_prompt` and return one Nano Banana Pro prompt for an already-stitched asset sheet. Apply the Stage 3 photographic, material, lighting, view, and measurement rules. Refer to the externally attached Stage 2 image as the visual continuity source. An explicitly supplied face reference may be used only by the optional face-lock branch. The prompt must not request separately generated views or external assembly.
 
-For an environment, use `stage1_prompt` for concrete architecture, layout, circulation, scale, fixed mechanisms, landmarks, usable spaces, and explicit spatial relationships, then return three complete Nano Banana Pro prompts. Each prompt refers to the externally attached approved cinematic environment image. Each prompt creates one standalone 16:9 view from the camera position assigned in `stage3-asset-prompts.md`; never combine the views into one image. If `stage1_prompt` is absent, stop rather than reconstructing the approved design from generic registry text or an image.
+For a Default-workflow environment, use `stage1_prompt` for concrete architecture, layout, circulation, scale, fixed mechanisms, landmarks, usable spaces, and explicit spatial relationships, then return three complete Nano Banana Pro prompts. Each prompt refers to the externally attached approved Stage 2 environment image. Each prompt creates one standalone 16:9 view from the camera position assigned in `stage3-asset-prompts.md`; never combine the views into one image. If `stage1_prompt` is absent, stop rather than reconstructing the approved design from generic registry text or an image.
 
 Crowds stop after Stage 2. They have no Stage 3 sheet or measurement caption.
 
@@ -124,7 +132,7 @@ Return the revision prompt only. Image execution is outside this skill.
 - **Different model requested:** use the named model for that stage while preserving the workflow and approval gates.
 - **Prompt or prompt-only requested:** return only the requested final prompt or prompts. Do not return a grounded brief, planning notes, preservation list, or workflow explanation. A Stage 1 prompt still replaces the matching `stage1_prompt`.
 - **Existing Stage 1 prompt supplied:** store it in the matching variant, replacing the prior `stage1_prompt`, then begin Stage 2 or Stage 3 as requested.
-- **External image attachments:** never inspect, verify, or require them locally. Still include the required attached-image wording: Stage 2 addresses the externally attached Stage 1 image, and Stage 3 addresses the externally attached approved cinematic image.
+- **External image attachments:** never inspect, verify, or require them locally. Still include the required attached-image wording: Default Stage 2 addresses the externally attached Default Stage 1 image; Default Stage 3 addresses the externally attached Default Stage 2 image; Combined Stage 2 addresses the externally attached Combined Stage 1 image.
 - **Direct Nano Banana Pro prompt requested:** write a grounded brief and one Nano Banana Pro prompt without Stage 1. Do not run it.
 - **Crowd requested:** write prompts through Stage 2 only.
 - **Material ambiguity:** ask one concise question only when the missing fact would materially change identity, continuity, or composition. Otherwise infer conservatively.
@@ -139,7 +147,7 @@ The prompt-only exception takes precedence over every output format in this skil
 - Do not mention workflow stages, approval status, source documents, style guides, model names, production instructions, or internal reference-handling logic.
 - Include attached-image language in every Stage 2 and Stage 3 prompt. This language addresses the external image model and does not mean the skill has inspected or verified an image.
 - Ground people, text, logos, magic, weapons, and decorative elements in the brief, `scripts/STORY-REFERENCE.md`, matching registry records, logged Stage 1 prompt, or project references.
-- Preserve the role assigned to each external reference: Stage 1 image for Default Stage 2 visual conversion; the Default Stage 2 image or Combined MidJourney image for Stage 3 visual continuity; and any optional face or edit reference only within its explicitly assigned scope.
+- Preserve the role assigned to each external reference: Default Stage 1 image for Default Stage 2 conversion; Default Stage 2 image for Default Stage 3 continuity; Combined Stage 1 image for Combined Stage 2 continuity; and any optional face or edit reference only within its explicitly assigned scope.
 - Follow the selected generator for all asset-specific prompt content and formatting.
 
 ## Output Contract

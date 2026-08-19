@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this workflow only when the user selects `Combined`. It replaces the default environment Stage 1 concept and Stage 2 conversion with one MidJourney prompt that directly creates the cinematic environment image. Read `environment-style-guide.md` for project-specific architecture, materials, palette, ornament, technology, and ownership cues.
+Use this workflow only when the user selects `Combined`. It has two stages: Combined Stage 1 directly creates the cinematic environment through MidJourney, and Combined Stage 2 creates three separate environment views through Nano Banana Pro. This replaces the Default workflow's concept, conversion, and final multi-view numbering. Read `environment-style-guide.md` for project-specific architecture, materials, palette, ornament, technology, and ownership cues.
 
 The user's MidJourney moodboard controls cinematic style, photographic character, color grading, texture, and general visual atmosphere. Do not spend prompt space reconstructing those qualities. Keep material colors, time of day, weather, visibility, and lighting conditions when they are required by the user, story state, registry, or location design.
 
@@ -32,8 +32,8 @@ Preserve any user-supplied MidJourney moodboard or personalization parameter exa
 
 The final prompt must describe one complete cinematic environment image. Do not include line-art, concept-sheet, transformation, conversion, reference-image, workflow-stage, approval, model, source-document, or internal reasoning language.
 
-## Registry and Approval
+## Combined Stage 1 Registry and Approval
 
-Immediately replace the matching scene variant's `stage1_prompt` with the complete combined MidJourney prompt. This field remains the textual design anchor used by Stage 3. Preserve every other registry field.
+Immediately replace the matching scene variant's `stage1_prompt` with the complete combined MidJourney prompt. This field remains the textual design anchor used by Combined Stage 2. Preserve every other registry field.
 
-Return the grounded brief and combined prompt, then stop for approval. After the user approves the resulting MidJourney image and requests continuation, proceed directly to Stage 3. Do not create a separate environment Stage 2 prompt.
+Return the grounded brief and combined prompt, then stop for approval. After the user approves the resulting MidJourney image and requests continuation, proceed to Combined Stage 2 using the Environments route in `stage3-asset-prompts.md`. Combined Stage 2 returns three standalone environment-view prompts. Do not create a Nano Banana live-action conversion prompt between these stages.
