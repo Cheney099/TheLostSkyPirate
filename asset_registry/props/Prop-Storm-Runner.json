@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "大型木质空中帆船，设有三根木制桅杆、横桁间展开的白色船帆、复杂索具与栏杆，船尾下方安装黄铜螺旋桨。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Large Victorian pirate skyship concept, a broad timber sailing hull with long rising bow and stepped sterncastle, three masts carrying a layered practical sail plan, dense functional rope rigging, open main deck with central capstan and paired deck guns, raised side walkways and twin staircases leading to an elevated steering deck with an enormous wheel, paired screw propellers beneath the stern driven by exposed piston rods, pressure pipes, compact boilers, and short smokestacks, no balloon envelope. One complete 2D vehicle design, elevated rear-side three-quarter view revealing deck organization and full hull silhouette, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 4:3 --style raw --s 85 --no people, scenery, clouds, color, text, labels, border, spacecraft, jet engines, sci-fi panels, LEDs",
       "image": null
     }
   ]

@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "一把手持式蒸汽动力激光手枪，设有握把、短枪管与外露机械动力组件。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Victorian steam-powered energy pistol concept, a compact octagonal steel barrel above a curved wooden one-hand grip, high-pressure cylinder beneath the barrel feeding a miniature exposed turbine and dynamo when the trigger valve opens, current carried through protected copper coils into a glass-insulated focusing chamber, analog pressure gauge, manual charging lever, safety vent, and reinforced bell-shaped muzzle explaining the firing principle while preserving balanced pistol proportions. One complete usable weapon, natural three-quarter product view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 3:2 --style raw --s 80 --no people, hands, beam, scenery, color, text, labels, border, modern pistol slide, tactical rail, polymer, LEDs, sci-fi blaster",
       "image": null
     }
   ]

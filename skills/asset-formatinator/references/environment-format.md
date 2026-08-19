@@ -51,7 +51,7 @@ Close with one compact sentence containing photographic finish, aspect ratio, re
 
 ### Presentation, Camera, and Activity
 
-Produce one photorealistic live-action cinematic environment still, 16:9 landscape, 4K, with plausible perspective, scale, construction, material response, reflections, contact shadows, and lighting appropriate to the requested time, weather, and location.
+Produce one photorealistic live-action cinematic environment still, 16:9 landscape, delivered at exactly 1920x1080 (1080p). Do not generate or deliver 4K. When the selected image service does not offer native 1920x1080, use its nearest suitable non-4K generation size and downscale the final image locally to exactly 1920x1080 without changing composition. Maintain plausible perspective, scale, construction, material response, reflections, contact shadows, and lighting appropriate to the requested time, weather, and location.
 
 Place the camera within an unfolding scene rather than treating the location as a neutral record. Favor an oblique or three-quarter view when useful, but use a centered axial composition for ceremonial gateways, civic monuments, or symmetrical engineered spaces. Use a wide 24-40mm full-frame lens feel for monumental architecture, fleets, floating structures, and large spatial reveals; use a natural 35-55mm feel for human-scale locations. Allow a close dark foreground structure, vessel edge, bridge, or architectural mass to partially occlude the frame when it strengthens depth and scale. Stage a readable middle-distance focal area and receding structures, routes, vessels, or landmarks. Include observable use, activity, or recent evidence of activity when appropriate.
 

@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "小巧的银色金属盒，表面覆盖精密齿轮、奇异雕纹与细密金属接缝，顶部刻有船舵形徽记。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Victorian clockwork puzzle box concept, a palm-sized faceted metal case divided by precise interlocking seams, three nested surface gear rings rotating in sequence around a ship-wheel-shaped identity plate, hinged shell leaves able to separate around a protected central glass projector lens, one small winding crown and tactile safety catch showing how the mechanism is armed, authenticated, unlocked, and opened, compact ceremonial construction driven by visible clockwork rather than electronics. One complete usable object in its closed ready state, close three-quarter view, full silhouette visible, crisp varied-width monochrome ink linework on white paper, minimal texture, clean uncluttered presentation --ar 1:1 --style raw --s 80 --no people, hands, hologram, scenery, color, text, labels, border, digital screen, LEDs, sci-fi cube",
       "image": null
     }
   ]
