@@ -10,7 +10,7 @@
       "status": "Base",
       "is_base": true,
       "appearance": "外形与服装多样的都市平民群体。",
-      "stage1_prompt": null,
+      "stage1_prompt": "Eight citizens of a Victorian steam-powered metropolis form a varied urban crowd with distinct ages, builds, faces, and occupations: an elderly woman selling small goods, a broad cargo porter, a slender middle-class clerk, a young mechanic, a dock sailor, a well-dressed traveler, a working mother, and a school-age child. Use varied skin tones, hair textures, and hairstyles, with six-to-six-and-a-half-head adult proportions.\n\nTheir practical Victorian clothing includes fitted jackets, waistcoats, shirts, modest blouses, long skirts, trousers, aprons, scarves, brimmed hats, caps, gloves, sturdy boots, and period shoes. Middle-class figures have cleaner tailoring and patterned fabric; working citizens use canvas, linen, wool, leather, reinforced seams, useful pockets, and compact brass fittings. Distribute muted blue, bottle green, brick red, ochre, cream, charcoal, warm brown leather, brass, copper, and small enamel accents across the group without uniforms.\n\nThey share a relaxed street-side activity: exchanging goods, checking parcels, waiting, and conversing beside a public loading area. Include hand baskets, wrapped parcels, a small tool case, and a wheeled market cart.\n\nComplete flat-color 2D production crowd concept, 16:9 landscape, every full body visible, simplified elevated city-street background, crisp varied-width ink, opaque flat colors, minimal texture, no lighting, shading, gradients, or painterly rendering.",
       "image": null
     }
   ]
