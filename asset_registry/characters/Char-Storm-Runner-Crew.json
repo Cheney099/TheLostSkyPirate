@@ -1,0 +1,19 @@
+{
+  "id": "Char-Storm-Runner-Crew",
+  "type": "character",
+  "name": "风暴奔行者号船员",
+  "description": "成年群体；嗓音与身高因个体而异。",
+  "attributes": {
+    "movement": "船员协同收放绳索与船帆、攀爬索具，并在甲板与操帆区域完成持续的船务操作。"
+  },
+  "variants": [
+    {
+      "id": "Char-Storm-Runner-Crew-Base",
+      "status": "Base",
+      "is_base": true,
+      "appearance": "由多名成年空盗水手与甲板船员组成的群体，体型与轮廓各异，穿适合操帆、攀爬和甲板劳动的实用空盗服装，并携带常用船务装备。",
+      "stage1_prompt": "Seven grown male sky-pirate sailors and one twelve-year-old cabin boy form a cohesive working crew. The adults range from their late twenties to early fifties: a broad boatswain, strong rope hauler, wiry rigger, compact mechanic, lanky lookout, sturdy sailmaker, and agile deckhand. Give them varied builds, skin tones, believable working faces, modest beards, and a few minor scars. Their silhouettes remain practical and understated.\n\nEvery crew member wears visible period headwear. Distribute worn pirate and Victorian hat styles across the group: two restrained leather tricorns, a weathered broad-brimmed cocked hat, a low-crowned sailor hat, a dented bowler, a soft flat cap, and a battered short top hat with a narrow brim. The cabin boy wears an oversized newsboy cap. Keep the hats functional and simply trimmed, using plain bands, modest buckles, stitching, and occasional small feathers.\n\nTheir clothing combines sailor shirts, plain waistcoats, short work jackets, loosely tied neck cloths, single sashes, fitted trousers or breeches, leather belts, gaiters, climbing boots, and occasional fingerless gloves. Use durable linen, wool, canvas, and worn leather with restrained brass or copper fasteners. The grounded palette uses faded navy, forest green, rust, ochre, cream, charcoal, muted teal, and warm brown, with simple stitching, repaired seams, and occasional patterned scarves or cuffs.\n\nDistribute rope gloves, belaying tools, sail needles, a compact repair kit, climbing clips, utility knives, and several plain sheathed cutlasses. Show the complete crew coordinating a sail change across the main deck of a wooden steam-powered sailing ship.\n\nComplete flat-color 2D production crowd concept, 16:9 landscape, every full body visible, simplified deck background, six-to-six-and-a-half-head adult proportions, crisp varied-width ink, opaque flat colors, minimal texture, no lighting, shading, gradients, or painterly rendering.",
+      "image": null
+    }
+  ]
+}

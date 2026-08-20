@@ -1,24 +1,24 @@
 # Stage 3 Asset Prompts
 
-Use this file for Stage 3 only. For characters, props, and special elements, return one prompt for an already-stitched multi-view asset image. For environments, return three prompts for three standalone images. Do not run the prompts or assemble environment views into a grid or sheet.
+Use this file for Stage 3 only. For characters, human-scale props, and special elements, return one prompt for an already-stitched multi-view asset image. For large props, return only the standalone view prompts explicitly selected by the user, up to four when the user requests all four. For environments, return three prompts for three standalone images. Do not run the prompts or assemble standalone views into a grid or sheet.
 
 Require a non-null `stage1_prompt` in the matching registry variant. Read it directly and extract the stable visible design decisions appropriate to the asset type. Discard its model syntax, rendering method, background, camera, framing, aspect ratio, and other source-presentation instructions. Every normal Stage 3 final prompt tells the image model to use the attached approved cinematic image as its visual reference. For a Combined environment this is the direct MidJourney image; otherwise it is the Stage 2 image. The user supplies that image externally; the skill never inspects, verifies, requests, or internally requires it and must not block prompt writing when it is unavailable to the local agent.
 
-Write the extracted design facts directly into every final prompt and refer to the external visual source only as `the attached image` or `the reference image`. Do not mention approval status, workflow stages, prior prompts, source documents, concept terminology, model names, or whether the local agent can access the image.
+Write only the extracted design facts needed to preserve visual continuity. Summarize rather than quote or reproduce `stage1_prompt`, following the asset-specific detail rules below. Refer to the external visual source only as `the attached image` or `the reference image`. Do not mention approval status, workflow stages, prior prompts, source documents, concept terminology, model names, or whether the local agent can access the image.
 
 Replace every angle-bracket placeholder with concise concrete wording before returning a final prompt.
 
 ## Measurement Resolution
 
-Every single-character sheet must include a height caption. Every prop sheet must include a real-world size caption. Environment images carry no measurement caption. Use an explicit measurement from the user or story reference when available. Otherwise infer one specific, plausible metric measurement from the logged design and story context.
+Every single-character sheet must include a height caption. Every prop output must include a real-world size caption. Environment images carry no measurement caption. Use an explicit measurement from the user or story reference when available. Otherwise infer one specific, plausible metric measurement from the logged design and story context.
 
 For characters, infer height from stated age, build, role, relative stature, and intended physical read. For prop assets, state the production-useful dimension: length for long objects and vessels, height for upright objects, diameter for circular devices, or width and height for flat objects. Infer the measurement from human use, carrying capacity, internal space, mechanical function, and the logged design's scale.
 
-Crowds have no Stage 3 sheet and therefore no height caption.
+Crowds have no Stage 3 output and therefore no height caption.
 
-## Asset-Sheet Routing
+## Asset Output Routing
 
-Classify each non-character asset by physical scale and spatial role before selecting a template. Use `Human-Scale Props` for discrete objects at or below human scale. Use `Large Props` for any discrete asset larger than a person or requiring boarding, access, cargo capacity, or large-scale structural support. Use `Environments` for a navigable space, fixed architecture, or an asset whose identity depends on its surroundings. This routing is based on scale and spatial role, not object type.
+Classify each non-character asset by physical scale and spatial role before selecting a template. Use `Human-Scale Props` for discrete objects at or below human scale. Use `Large Floor-Supported Props` or `Large Flight-Capable Props` for any discrete asset larger than a person or requiring boarding, access, cargo capacity, or large-scale structural support; select between them by how the asset is naturally supported. Use `Environments` for a navigable space, fixed architecture, or an asset whose identity depends on its surroundings. This routing is based on scale and spatial role, not object type.
 
 ## Characters
 
@@ -44,24 +44,63 @@ Use this optional branch only when the user explicitly supplies a separate face 
 
 Use the complete Characters prompt template above, changing `the attached image` to `the first reference image`. After its fixed character design sentence, add: `Use the second reference image only for facial bone structure, eye shape, nose, mouth, jawline, and facial proportions; the first reference image and stated design control the body, build, outfit, garment colors, hairstyle, proportions, and current condition.` Keep every panel, lighting, finish, measurement, and exclusion instruction from the base template so the returned prompt remains standalone.
 
-## Prop Sheets
+## Prop Outputs
 
 Extract the asset's identity, silhouette, structural form, proportions, construction, operating parts, moving parts, and functional logic from `stage1_prompt`. Use the externally attached Stage 2 image for visual continuity. Resolve any written material, color, finish, wear, and craftsmanship instructions using `prop-generator.md`, then state those concrete decisions in the final prompt. Select replacements by scale:
 
-- **Human-Scale Props:** replace `<ITEM>` with `item`, `<VIEWS>` with `front, side, and top views`, and `<STAGE>` with `a simple dark studio with a black wall and black floor`.
-- **Large Props:** replace `<ITEM>` with `large asset`, `<VIEWS>` with `front three-quarter, side-profile, and rear three-quarter views`, and `<STAGE>` with `a large-scale black seamless stage with a black backdrop and black floor plane`. Do not use top-down or underside views.
+### Human-Scale Prop Sheet
 
-Replace `<ASSET_DESIGN>` and every routing placeholder before returning the final prompt.
+Return one prompt for a stitched three-view sheet. Replace `<ASSET_DESIGN>` and `<MEASUREMENT>` before returning the final prompt.
 
 ```text
-Using the attached image as the visual reference, generate one 16:9 landscape multi-view sheet of this <ITEM>: <ASSET_DESIGN>. Preserve the attached asset's silhouette, structural form, materials, colors, finish, wear, proportions, operating parts, and functional logic across all views. Show <VIEWS> combined into one single image.
+Using the attached image as the visual reference, generate one 16:9 landscape multi-view sheet of this item: <ASSET_DESIGN>. Preserve the attached asset's silhouette, structural form, materials, colors, finish, wear, proportions, operating parts, and functional logic across all views. Show front, side, and top views combined into one single image.
 
-Render every view as a photorealistic live-action cinematic reference still of the same real three-dimensional asset, with the attached image's material response, surface finish, reflections, perspective, depth, and shading character. Place all three views in <STAGE>. Use consistent cinematic available-light photography across the sheet: even soft illumination, soft frontal ambient key, gentle overhead fill, balanced exposure, open readable shadows, and grounded contact shadows. Use no rim light, backlight, edge light, spotlight, flood fill, harsh beauty key, white bounce, or halo separation. Use subtle fine cinematic film grain. Keep the result sharp, clean, richly colored, and professionally photographed, with consistent scale and exact visual continuity with the attached image across every view.
+Render every view as a photorealistic live-action cinematic reference still of the same real three-dimensional asset, with the attached image's material response, surface finish, reflections, perspective, depth, and shading character. Place all three views in a simple dark studio with a black wall and black floor. Use consistent neutral available-light photography across the sheet: even soft off-camera ambient illumination, soft frontal and lateral fill, balanced exposure, open readable shadows, controlled reflections, and a grounded contact shadow or neutral support. Use subtle fine cinematic film grain. Keep the result sharp, clean, richly colored, and professionally photographed, with consistent scale and exact visual continuity with the attached image across every view.
 
 In the bottom-right corner, render a small clearly legible caption on a subtle light label reading exactly: "Size: <MEASUREMENT>". Include no other text.
 ```
 
 Use an explicit measurement from the brief or story reference when available. Otherwise infer `<MEASUREMENT>` from the logged design and story context; do not omit the `Size` line.
+
+### Large Prop Views
+
+Before reading project sources or writing a large-prop Stage 3 prompt, determine whether the user explicitly selected one or more of these views: `Low Front Three-Quarter`, `Low Side Profile`, `Low Rear Three-Quarter`, `High Oblique Aerial`, or `All Four`. If no selection is present, return only this question and stop:
+
+`Which Stage 3 view would you like: Low Front Three-Quarter, Low Side Profile, Low Rear Three-Quarter, High Oblique Aerial, or All Four?`
+
+Generate only the selected view prompts. A user may select one view or any named subset. Generate all four prompts only when the user explicitly selects `All Four` or otherwise unambiguously requests every view. Each selected view creates one standalone 4K image. Do not create a grid, split screen, collage, contact sheet, or multi-panel image. Keep each final prompt at 150 words or fewer, excluding its external chat label. Repeat the same concrete `<ASSET_CATEGORY>`, `<DESIGN_LOCK>`, `<ASPECT_RATIO>`, and `<MEASUREMENT>` in every returned prompt so that each prompt is independently usable.
+
+Resolve `<ASSET_CATEGORY>` as a short generic identity such as a type of vessel, vehicle, machine, or automaton. Resolve `<DESIGN_LOCK>` as three to five noun-led items totaling no more than 35 words. List only the dominant body, hull, or chassis form, primary propulsion or locomotion, and the few largest silhouette-changing or identity-critical features. Give each item one feature cluster; do not create compound sub-inventories of minor mechanisms. Never copy or closely paraphrase the complete `stage1_prompt`. Omit mood, atmosphere, aesthetic praise, narrative framing, minor decoration, colors, surface finish, craftsmanship language, and source presentation details. Let the attached image carry fine construction, materials, ornament, and appearance.
+
+Choose `<ASPECT_RATIO>` once from the asset's complete silhouette and use it consistently across every selected view: `16:9 landscape` for very long or broad assets, `3:2 landscape` for moderately wide assets, `4:3 landscape` for compact horizontal assets, `1:1` for balanced compact forms, `4:5 portrait` for upright assets, or `2:3 portrait` for very tall assets. Do not force a landscape ratio onto an upright design.
+
+Classify the asset by support:
+
+- **Floor-supported:** replace `<ASSET_PLACEMENT>` with `Rest it directly on the matte black floor with a natural contact shadow.`
+- **Flight-capable:** replace `<ASSET_PLACEMENT>` with `Suspend it freely with open clearance and no visible support.`
+
+Keep the asset stationary and change only the camera position between prompts. For the first three views, position the camera just above the showroom floor and look upward from sufficient distance to keep the perspective moderate. Keep every extremity inside the frame with substantial clear space around the complete silhouette. Use unobstructed sightlines so foreground forms and attachments do not conceal other major sections. The fourth view is a high oblique aerial inspection view that reveals the asset's upper construction without becoming a vertical top-down image. Preserve physically plausible full-scale perspective, natural depth of field, and clear detail across the asset so the aerial view does not resemble a miniature.
+
+Write each selected prompt by replacing `<ASSET_CATEGORY>`, `<DESIGN_LOCK>`, `<ASSET_PLACEMENT>`, `<VIEW_INSTRUCTION>`, `<ASPECT_RATIO>`, and `<MEASUREMENT>` below. Return only the selected completed prompts, in canonical view order when more than one is requested, without placeholder text.
+
+Label every returned view in the chat outside its prompt block so the user can select prompts independently. Use exactly these chat labels: `View 1: Low Front Three-Quarter`, `View 2: Low Side Profile`, `View 3: Low Rear Three-Quarter`, and `View 4: High Oblique Aerial`. Put each applicable label on its own line immediately before the corresponding prompt block. The label is interface text and must not appear inside the prompt or generated image.
+
+```text
+Use the attached image as exact design reference. Create a photorealistic live-action image of the same full-scale <ASSET_CATEGORY>. Design lock: <DESIGN_LOCK>. Preserve appearance and construction.
+
+<VIEW_INSTRUCTION> Keep its full silhouette clear.
+
+Vast dark showroom; matte black floor; boundaries lost in shadow. <ASSET_PLACEMENT> Use broad off-camera ambient light, soft frontal/lateral fill, even exposure, readable shadows, realistic materials, and fine grain. No visible fixtures, architecture, miniature effect, or dramatic lighting. <ASPECT_RATIO>, 4K. Bottom-right: "Size: <MEASUREMENT>". No other text.
+```
+
+Use these view instructions:
+
+1. **Low front three-quarter view:** `Change camera angle from the attached image. View the <ASSET_CATEGORY> from floor level, low front three-quarter, looking upward; show it in full.`
+2. **Low side-profile view:** `Change camera angle from the attached image. View the <ASSET_CATEGORY> from floor level in true side profile, looking slightly upward; show it in full.`
+3. **Low rear three-quarter view:** `Change camera angle from the attached image. View the <ASSET_CATEGORY> from floor level, low rear three-quarter, looking upward; show it in full.`
+4. **High oblique aerial view:** `Change camera angle from the attached image. View the <ASSET_CATEGORY> from a high oblique aerial angle, looking downward to reveal its upper construction with deep focus and full-scale perspective.`
+
+Use an explicit measurement from the brief or story reference when available. Otherwise infer `<MEASUREMENT>` from the logged design and story context; use the same measurement in every returned prompt and do not omit the `Size` line.
 
 ## Special Elements
 
